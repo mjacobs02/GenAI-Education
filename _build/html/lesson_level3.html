@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Level 3 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lesson_level3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Level 2" href="lesson_level2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="module1_intro.html">1. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="gen_ai_education.html">Gen AI in Education</a></li>
+<li class="toctree-l2"><a class="reference internal" href="llms_explained.html">LLMs Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dangers_ai.html">Dangers of AI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ai_tool_database.html">AI Tools Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="lesson_planning.html">2. Lesson Planning</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Level 3: Expert</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flesson_level3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/lesson_level3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Level 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-creating-interactive-gamified-lessons">Workflow 1: Creating Interactive Gamified Lessons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-turning-academic-papers-into-engaging-ai-generated-podcasts">Workflow 2: Turning Academic Papers into Engaging AI-Generated Podcasts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="level-3">
+<h1>Level 3<a class="headerlink" href="#level-3" title="Link to this heading">#</a></h1>
+<p>This section shows the possibilities for using AI in lesson planning. Look at the following workflows to get inspired and see whats possible.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Video:</strong> Walkthrough of the prompts in this section</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/YQTBFc25-eg?start=0" 
+            title="Embedded Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+</div>
+</details><section id="workflow-1-creating-interactive-gamified-lessons">
+<h2>Workflow 1: Creating Interactive Gamified Lessons<a class="headerlink" href="#workflow-1-creating-interactive-gamified-lessons" title="Link to this heading">#</a></h2>
+<p>Gamifying lessons doesn’t need to feel overwhelming. By following a simple workflow you will generate ideas, customize details, and build a draft, all in record time.</p>
+<a class="reference internal image-reference" href="_images/Level_3_Workflow_1.png"><img alt="Level 3 Workflow 1" class="align-center" src="_images/Level_3_Workflow_1.png" style="width: 600px;" /></a>
+<hr class="docutils" />
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Real life case study</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Introduction to the Course and Motivation for the Prompt:</strong> TB341ID: I&amp;C in a Socio-Technical Context, focuses on applying I&amp;C knowledge to societal and policy challenges, incorporating modeling, emerging technologies like AI and Blockchain, ethics, risk management, and institutional considerations. In previous years, workshops were reported as repetitive, with students expressing a desire for more variety. Hence, this course decided to try these prompts to create more engaging and diverse lessons.</p>
+<p class="sd-card-text"><strong>2. What Was Created and Time Saved:</strong> Using this prompt, we developed an interactive workshop centered around Open Data Governance. It saved significant time in generating initial ideas, reducing the effort required for a first draft by roughly a couple of hours (hard to quantify). The ideas generated by the prompt were helpful in making the workshops more exciting. Especially the idea of letting students explore and evaluate data sets on their own, sounded really appealing to help make the workshop more engaging and fun, while still maintaining the academic element and not making it too gamified.</p>
+<p class="sd-card-text"><strong>3. Student Reactions:</strong> As it has not yet been implemented, there are no student reactions yet. This section will be updated when the ideas have been used during the workshops.</p>
+<p class="sd-card-text"><strong>4. Advice for Using the Prompt:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Specify the following to get more practical solutions: time constraints, breaks within the workshop, and spatial limitations (e.g., suitability of lecture halls for activities)</p></li>
+<li><p class="sd-card-text">Finding the middle ground between being too academic and too gamified requires careful consideration, try to think about this before and discuss examples of activities you’d think are interesting.</p></li>
+<li><p class="sd-card-text">Be careful when including examples to the prompt, because the model is sensitive to this input and will often make very similar workshop ideas to the ones proposed.</p></li>
+</ul>
+</div>
+</details><p><strong>Part 1: Generate interactive lesson ideas</strong></p>
+<ol class="arabic simple">
+<li><p>Copy-paste Prompt 1 to generate various lesson ideas.</p></li>
+</ol>
+<div class="important dropdown admonition">
+<p class="admonition-title">Prompt 1: Decide on gamification elements</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>## Introduction
+- **YOU ARE** an **EDUCATIONAL DESIGNER** specializing in enhancing student engagement through innovative and effective teaching strategies.
+
+(Context: &quot;The goal is to generate scenarios that address engagement challenges in a university setting by employing various pedagogical techniques and tools.&quot;)
+
+## Initial Input
+1. **What is the topic of your lecture?**
+- Please describe the subject or main theme you want to teach. (Example: Blockchain fundamentals, monopolistic regulation, or environmental policy.)
+
+(Context: &quot;Knowing the topic ensures that scenarios are tailored to your specific teaching needs.&quot;)
+
+---
+
+## Task Description
+- **YOUR TASK** is to generate three distinct scenarios to help a teacher improve student engagement in their lecture. 
+- Each scenario should incorporate one or more strategies from the following approaches:
+- Minimizing technological distractions.
+- Enhancing intrinsic motivation and attention spans.
+- Adding pre- and post-lecture assignments that are AI-resistant.
+
+## Detailed Strategies to Address Engagement Challenges
+
+### 1. **Minimizing Technological Distractions**
+- Encourage **active learning techniques**, such as:
+    - Think-pair-share activities.
+    - Case study discussions - ensure they are highly relevant, controversial and fun for univeristy students.
+    - In-class discussions where every student must contribute.
+- Design activities where using devices for non-academic purposes is naturally discouraged (e.g., group tasks requiring physical interaction).
+
+### 2. **Enhancing Intrinsic Motivation and Attention Span**
+- Use **guest speakers** who bring real-world expertise and relevance.
+- Integrate **projects with tangible outcomes**, enabling students to create something meaningful (e.g., Improving Recycling in Student Housing which is then later shared with DUWO).
+- Relate material to **current events or real-life challenges**, emphasizing immediate relevance and impact. Try to make it interesting, applicable and controversial for uni students.
+- Incorporate **competition and collaboration**:
+    - Gamify lessons with rewards like leaderboards or interactive quizzes.
+    - Think of unique games that can be easily made with the help of AI such as: Tailored Jeopardy, Mock Shark Tank, Solving Mystery Case, Crisis Management Simulation etc.
+- Start courses with a **big idea and roadmap**:
+    - Show students how the course fits into their learning journey.
+    - Deliver each lecture with one key takeaway (&quot;golden focus&quot;) and engaging methods like simulations or games.
+- Use a flipped classroom to have students explain and teach concepts to the rest of the class in a fun and engaging way.
+
+### 3. **Pre- and Post-Lecture Assignments**
+- Ensure pre-lecture work is **AI-proof**:
+    - Use reflective, highly personalized questions that prompt students to connect material to their own experiences or goals.
+    - Conduct observational studies where relevant requiring unique data or interactions that AI cannot replicate.
+- Create an AI generated role playing game which provides a simple short real life example to the topic allowing students to make decisions and see there effects
+
+---
+
+## Action Steps
+
+### 1. Collect Input
+- **ASK** the teacher for their lecture topic and any specific engagement challenges they’ve observed.
+
+(Context: &quot;Understanding the topic and context helps tailor the scenarios.&quot;)
+
+### 2. Generate Three Scenarios
+- **CREATE** three unique scenarios, each addressing engagement issues using one or more of the above strategies.
+- **OUTLINE** clear, actionable steps for:
+    - Pre-lecture preparation.
+    - In-class engagement activities.
+    - Post-lecture reflections or assignments.
+- **JUSTIFY** why these strategies will work, referencing relevant educational principles or practices.
+
+### 3. Tailor Scenarios to Context
+- Suggest how scenarios can be adapted to different class sizes, student demographics, or course structures.
+
+---
+
+## Goals and Constraints
+- **ENSURE** scenarios are practical, creative, and adaptable.
+- **YOU MUST AVOID** overly complex or resource-heavy solutions unless specifically requested.
+
+---
+
+## Outcome Expectations
+- **PROVIDE** three fully developed scenarios tailored to the provided lecture topic.
+- **INCLUDE** specific examples and adjustments to make the scenarios applicable to various teaching contexts.
+
+---
+
+## IMPORTANT
+- &quot;Your expertise in designing these scenarios will empower educators to create dynamic, engaging, and impactful learning experiences.&quot;
+- &quot;These strategies should make lectures memorable, effective, and AI-resilient. Let’s transform classrooms into hubs of active learning!&quot;
+
+Start the conversation by asking for the initial input!
+</pre></div>
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Review the options and choose your favorite.</p></li>
+</ol>
+<div class="note admonition">
+<p class="admonition-title">Personal Note</p>
+<p>Don’t like the ideas, try specifying the AI what you’re looking for, such as Jeopardy quizzes, shark tank pitches, detective games, simulations etc.</p>
+</div>
+<p><strong>Part 2: Develop draft of gamified lesson</strong></p>
+<ol class="arabic simple" start="3">
+<li><p>Insert your chosen idea into Prompt 2. You will also be asked to answer five context-specific questions to tailor the game to your needs. Provide as much detail as you prefer (more detail = better customization).</p></li>
+</ol>
+<div class="important dropdown admonition">
+<p class="admonition-title">Prompt 2: Give more context for the game</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please consider the following lesson or activity that you wish to gamify:
+
+**************************
+**[Insert Activity Here]**
+**************************
+
+Role of the Assistant:
+You are an expert educational game designer with extensive experience in transforming traditional lessons into engaging and interactive learning games FOR UNIVERSITY STUDENTS.
+
+Based on the activity provided, please formulate the top five most beneficial follow-up questions that will help you gain a comprehensive understanding of the lesson. These questions should be insightful, specific, and aimed at gathering information that will enable you to create a tailored and effective gamified version of the activity.
+</pre></div>
+</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Input the answers from Step 3 at the bottom of Prompt 3.</p></li>
+</ol>
+<div class="important dropdown admonition">
+<p class="admonition-title">Prompt 3: Develop gamified lesson</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Based on my responses to the follow-up questions below, please synthesize all the information provided.
+
+Role of the Assistant:
+You are a seasoned educational gamification expert who creates SIMPLE, innovative and effective learning games tailored for university students.
+
+Using the information given, please:
+
+1. Develop a complete outline of the game ensuring it is SIMPLE and easy for a teacher to incorporate. Hence utilize the 80/20 principle to focus on the most important parts.
+
+2. Break down how you will create all necessary parts of this game.
+
+Your response should:
+
+- Provide a detailed description of the gamified lesson or activity.
+- Explain how it aligns with the original learning objectives.
+- Include clear instructions, rules, and any necessary materials or resources (some resources availble are a brightspace page, and microsoft 365).
+- Highlight the interactive and engaging elements you&#39;ve incorporated.
+- Think step by step about a plan of action of what need to be done to ensure this gamified lesson can be created.
+
+At the end of the output ask to begin with the first step of the plan of action!
+
+Answers to follow-up questions:
+*************************
+**[Insert Answers Here]**
+*************************
+</pre></div>
+</div>
+</div>
+<p><strong>Outcome</strong>: A good first version of a gamified lesson which you can share, adapt and finalize.</p>
+</section>
+<hr class="docutils" />
+<section id="workflow-2-turning-academic-papers-into-engaging-ai-generated-podcasts">
+<h2>Workflow 2: Turning Academic Papers into Engaging AI-Generated Podcasts<a class="headerlink" href="#workflow-2-turning-academic-papers-into-engaging-ai-generated-podcasts" title="Link to this heading">#</a></h2>
+<p>Transforming academic papers into engaging learning materials doesn’t have to be complicated. With this straightforward process, you’ll create engaging materials effortlessly.</p>
+<a class="reference internal image-reference" href="_images/Level_3_Workflow_2.png"><img alt="Level 3 Workflow 2" class="align-center" src="_images/Level_3_Workflow_2.png" style="width: 600px;" /></a>
+<hr class="docutils" />
+<p><strong>Part 1: Generate interactive lesson ideas</strong></p>
+<ol class="arabic simple">
+<li><p>Insert Prompt 1 to help transform academic papers into lively podcast ideas created by NotebookLM. Don’t forget to add the names of the papers at the bottom of the prompt.</p></li>
+</ol>
+<div class="important dropdown admonition">
+<p class="admonition-title">Prompt 1: Create podcast prompts</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Role of the Assistant: You are a podcast theme strategist specializing in transforming academic papers into engaging podcast episodes. Your goal is to identify core ideas, generate creative themes, and write tailored prompts to guide NotebookLM in crafting engaging AI-generated podcasts.
+Task: For each paper provided:
+1. Identify the core idea or main insight of the paper in 1-2 sentences.
+2. Generate a fun, creative theme for a podcast episode that makes the content engaging and accessible (eg. Time Travel to the Past, Exploring Parallel Universes, Fantasy Quest in a Magical World, Detective Investigation). Ensure it fits well with the main theme of the paper!
+3. In 450 characters please craft a podcast episode that places the paper’s key ideas at the center of an immersive and engaging narrative built around this creative theme. Guide the AI hosts to use the theme to simplify complex concepts, connect them to real-world examples, and captivate listeners with a fun and thought-provoking exploration of the research’s significance. Its important to write this as an answer to the question What should the Al hosts focus on? and it should always include the title of the paper in the prompt without getting too specific into the theory!
+************************
+**[Insert Papers Here]**
+************************
+</pre></div>
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Create a new notebook in NotebookLM and insert the paper as a source. Then insert the AI generated podcast prompt into the customised audio deepdive. For a video breakdown of how NotebookLM works refer back to <a class="reference internal" href="ai_tool_database.html"><span class="std std-doc">AI Tool Database</span></a></p></li>
+<li><p>Create AI-proof reflection questions for students who listened to the podcast using Prompt 2.</p></li>
+</ol>
+<div class="important dropdown admonition">
+<p class="admonition-title">Prompt 2: Create reflective questions</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Role of the Assistant:
+You are an educational specialist skilled in designing highly reflective and deeply personal questions that encourage authentic engagement with academic research while being resistant to generic AI-generated responses. Ensure the questions are simple to understand.
+Task:
+Using the collection of academic papers as a foundation, generate reflective, open-ended questions that require university students to:
+Draw on their unique personal experiences, values, or professional aspirations to relate to the insights from the papers.
+Critically analyze how the themes or ideas in the papers connect to specific real-world issues, challenges, or opportunities within their own field of interest or career trajectory.
+Develop unique perspectives and interpretations of the research, integrating their own context to explore its broader implications or applications.
+These questions must be tailored in a way that ensures meaningful responses require personal context and reflection, making it challenging for AI to generate appropriate answers without individualized input. Ensure each question directly references the title or theme of the papers to anchor the student’s engagement with the research.
+
+Really take your time and think step by step and making this personal and engaging for students.
+</pre></div>
+</div>
+</div>
+<p><strong>Outcome</strong>: An engaging way for students to interact with academic papers.</p>
+<div class="note admonition">
+<p class="admonition-title">Personal Note</p>
+<p>Though students could create these themselves, it’s more effective for the professor to do it. This avoids unnecesaary repetition (which is better for the environment), encourages more students to engage with the papers (as the barrier to do so if extremely low), and gives the professor control over the material, enabling targeted follow-up assignments.</p>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lesson_level2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Level 2</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-1-creating-interactive-gamified-lessons">Workflow 1: Creating Interactive Gamified Lessons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-2-turning-academic-papers-into-engaging-ai-generated-podcasts">Workflow 2: Turning Academic Papers into Engaging AI-Generated Podcasts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

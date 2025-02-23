@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Level 2 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lesson_level2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Level 3" href="lesson_level3.html" />
+    <link rel="prev" title="Level 1" href="lesson_level1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="module1_intro.html">1. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="gen_ai_education.html">Gen AI in Education</a></li>
+<li class="toctree-l2"><a class="reference internal" href="llms_explained.html">LLMs Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dangers_ai.html">Dangers of AI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ai_tool_database.html">AI Tools Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="lesson_planning.html">2. Lesson Planning</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Level 2: Intermediate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Expert</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flesson_level2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/lesson_level2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Level 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-1-find-relevant-real-life-cases">Prompt 1: Find Relevant Real-Life Cases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-2-ai-proof-through-personalised-reflection-questions">Prompt 2: AI Proof Through Personalised Reflection Questions</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="level-2">
+<h1>Level 2<a class="headerlink" href="#level-2" title="Link to this heading">#</a></h1>
+<p>This section delves deeper into leveraging AI for teaching, focusing on advanced prompts that help professors integrate thought-provoking case studies and reflections into their lessons.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Video:</strong> Walkthrough of the prompts in this section</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/kOFe8Bg19Ro?start=0" 
+            title="Embedded Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+</div>
+</details><hr class="docutils" />
+<section id="prompt-1-find-relevant-real-life-cases">
+<h2>Prompt 1: Find Relevant Real-Life Cases<a class="headerlink" href="#prompt-1-find-relevant-real-life-cases" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What it is:
+This prompt helps professors find impactful, recent, and thought-provoking real-life case studies to engage students in critical discussions. These cases are tailored to align with topics relevant to TU Delft students, such as engineering, technology, policy, and management.</p></li>
+<li><p>When to use it:</p>
+<ul>
+<li><p>To provide relatable and real-world context for theoretical concepts.</p></li>
+<li><p>To spark critical thinking and debate in the classroom.</p></li>
+<li><p>To design assignments or tasks that require practical application of knowledge.</p></li>
+</ul>
+</li>
+<li><p>How it benefits professors:
+Professors can quickly find unique and engaging case studies that resonate with students, making lessons more interactive and impactful.</p></li>
+</ul>
+<div class="important dropdown admonition">
+<p class="admonition-title">Find Relevant Cases Initial Prompt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please provide the topic or subject area for which you want to find a relevant and exciting real-life case study:
+
+***********************
+**[Insert Topic Here]**
+***********************
+
+**Your Role:**
+You are an expert researcher skilled at finding impactful, recent, and controversial real-life case studies that are fun and interesting for university students, especially those at TU Delft.
+
+**Your Task:**
+Based on the topic you provided, find and summarize **one** highly relevant real-life case study. The case study should:
+
+- Be **recent** (from the past few years) and have appeared in the news.
+- Be **controversial** and thought-provoking, sparking debate or strong opinions.
+- Be **engaging** and memorable for university students.
+- Relate to **engineering, technology, policy, or management**, aligning with TU Delft&#39;s areas of interest.
+
+For the case study, include:
+
+1. **Title and Background:**
+    - A clear and catchy title.
+    - Briefly explain the context and setting.
+2. **Summary:**
+    - Describe the main events or issues in simple, straightforward language.
+3. **Connection to the Topic:**
+    - Explain how this case study relates to your provided topic.
+4. **Key Points for Discussion:**
+    - Highlight the main controversies or dilemmas.
+    - Pose questions that encourage students to think critically and discuss.
+5. **Lessons Learned:**
+    - Outline important takeaways or insights from the case.
+6. **References:**
+    - Provide links or citations to reliable sources for more information.
+
+**Guidelines:**
+
+- **Keep it Simple:** Use clear and easy-to-understand language.
+- **Make it Impactful:** Choose a case that is significant and resonates with students.
+- **Ensure Relevance:** The case should directly relate to the topic and be suitable for academic discussion.
+- **Avoid Overused Examples:** Try to select a case that isn&#39;t overly familiar to encourage fresh perspectives.
+
+Begin by giving me 5 cases (with a one sentence explanation) to choose from and once I have selected one work it out in more detail!
+</pre></div>
+</div>
+</div>
+<div class="important dropdown admonition">
+<p class="admonition-title">Follow Up Prompt Option 1: Ethical Dilemmas</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Identify and analyze the ethical dilemmas presented in the case study. Provide guiding questions or a framework for students to evaluate the moral implications and justify their positions. Encourage students to reflect on how their values and perspectives influence their decision-making process.
+</pre></div>
+</div>
+</div>
+<div class="important dropdown admonition">
+<p class="admonition-title">Follow Up Prompt Option 2: Critical Discussion Questions</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Based on the selected case study, generate five critical discussion questions. These questions should encourage students to analyze the case from multiple perspectives, consider ethical or practical implications, and connect the case to theoretical concepts covered in class.
+Additionally, brainstorm three different ways of presenting this discussion to students in a fun, engaging, and interactive environment that can be implemented on the spot with minimal preparation.
+</pre></div>
+</div>
+</div>
+<div class="important dropdown admonition">
+<p class="admonition-title">Follow Up Prompt Option 3: Design a Task</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Using the insights from the case study, design a task where students create policy recommendations or strategic plans. Provide criteria for effective recommendations, such as feasibility, alignment with ethical standards, and evidence-based reasoning. Encourage students to justify their choices based on evidence from the case study.
+Additionally, brainstorm three different ways of presenting this task to students in a fun, engaging, and interactive environment that can be implemented on the spot with minimal preparation.
+</pre></div>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Personal Note</p>
+<p>Here I would recommend using Perplexity (or GPT search) to ensure that the information is correct.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="prompt-2-ai-proof-through-personalised-reflection-questions">
+<h2>Prompt 2: AI Proof Through Personalised Reflection Questions<a class="headerlink" href="#prompt-2-ai-proof-through-personalised-reflection-questions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What it is:
+This prompt helps professors generate reflection questions that require students to connect course topics to their personal experiences, goals, or values. These questions are designed to resist generic AI-generated answers by requiring unique and contextual insights.</p></li>
+<li><p>When to use it:</p>
+<ul>
+<li><p>For assignments, essays, or discussions that encourage self-reflection.</p></li>
+<li><p>To deepen student understanding of complex topics by relating them to real life.</p></li>
+<li><p>To evaluate student comprehension in a way that AI cannot easily replicate.</p></li>
+</ul>
+</li>
+<li><p>Why it’s AI-proof:
+These questions are tied to the student’s personal experiences and critical thinking, making them resistant to generic AI-generated answers.</p></li>
+<li><p>How it benefits professors:
+It allows professors to challenge students while ensuring genuine, individualized responses, fostering deeper engagement with the material.</p></li>
+</ul>
+<div class="important dropdown admonition">
+<p class="admonition-title">AI-Proof personalised questions</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please provide the topic or subject area for which you want to create reflective, personalized questions:
+
+***********************
+**[Insert Topic Here]**
+***********************
+
+**Role of the Assistant:**
+You are an educational specialist skilled in designing reflective prompts that encourage deep personal engagement and are resistant to generic AI-generated responses.
+
+**Task:**
+Based on the topic provided, generate five reflective, open-ended questions that require university students to:
+
+- Draw upon their personal experiences, opinions, or values.
+- Relate the topic to their own life, goals, or future career.
+- Think critically and provide unique perspectives.
+
+These questions should be highly personalized to each university student&#39;s context, making it difficult for AI tools to generate appropriate answers without that personal insight.
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lesson_level1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Level 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="lesson_level3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Level 3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-1-find-relevant-real-life-cases">Prompt 1: Find Relevant Real-Life Cases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-2-ai-proof-through-personalised-reflection-questions">Prompt 2: AI Proof Through Personalised Reflection Questions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

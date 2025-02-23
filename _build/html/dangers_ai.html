@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dangers of AI &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dangers_ai';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Prompt Engineering" href="prompt_engineering.html" />
+    <link rel="prev" title="LLMs Explained" href="llms_explained.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="module1_intro.html">1. Introduction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gen_ai_education.html">Gen AI in Education</a></li>
+<li class="toctree-l2"><a class="reference internal" href="llms_explained.html">LLMs Explained</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Dangers of AI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ai_tool_database.html">AI Tools Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="lesson_planning.html">2. Lesson Planning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Expert</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdangers_ai.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/dangers_ai.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Dangers of AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-1-environmental-impact">Danger 1: Environmental Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-2-copyright-infringement">Danger 2: Copyright Infringement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-3-bias">Danger 3: Bias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dangers-specific-to-higher-level-education">Dangers specific to Higher-Level Education</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dangers-of-ai">
+<h1>Dangers of AI<a class="headerlink" href="#dangers-of-ai" title="Link to this heading">#</a></h1>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Audio summary made by NotebookLM</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/3ZqempQtVzA?start=0" 
+            title="Embedded Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+</div>
+</details><p>There are many dangers of AI and sometimes its hard to keep oversight and really understand where to focus on. This page intends to walk you through some of the main challenges of AI and important things to consider.</p>
+<p>The video below gives a great overview of the most important current dangers of AI:</p>
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/eXdVDhOGqoE" 
+            title="Dangers of AI Explained" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+<section id="danger-1-environmental-impact">
+<h2>Danger 1: Environmental Impact<a class="headerlink" href="#danger-1-environmental-impact" title="Link to this heading">#</a></h2>
+<p>The environmental impact of AI is significant. <a class="reference external" href="https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243">Research from 2019</a> shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI <a class="reference external" href="https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3">it is projected</a> that by 2027 AI could consume the energy equivalent of a country like the Netherlands.</p>
+<a class="reference internal image-reference" href="_images/ImageCO2LLM.png"><img alt="CO2 LLM" class="align-center" src="_images/ImageCO2LLM.png" style="width: 400px;" /></a>
+<p>To better understand AI’s true impact, we need to examine three key stages: training, deployment (inference), and retraining/updates. While the training phase is initially very energy-intensive, the ongoing use during the deployment and inference phase can surpass the environmental impact of training due to its continuous operation. For example, <a class="reference external" href="https://arxiv.org/pdf/2311.16863">Google reported</a> that 60% of its AI-related electricity comes from running models, while only 40% is from training. By recognizing the impact of each stage allows for a clearer picture of AI’s long-term energy demands and environmental consequences.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Stage 1: Training</label><div class="sd-tab-content docutils">
+<p>Training a LLM is an intensive process that transforms raw text data into a functioning AI system. It begins with data preparation, where vast amounts of text—ranging from books and articles to internet content—are collected, cleaned, and formatted. This step removes duplicates, filters out low-quality information, and tokenizes text into numerical representations that the model can process. Even before training starts, data preprocessing alone requires significant computational resources to organize and structure terabytes of information.</p>
+<p>Once the dataset is ready, the core training phase begins. The model learns by predicting words in sentences, adjusting billions of internal parameters through repeated computations. This is done using high-performance hardware like GPUs and TPUs, which run nonstop for weeks or months. Each training step involves forward propagation (where the model makes a prediction), comparing it to the correct answer, and backpropagation (where the model updates its parameters to improve accuracy as discussed in <a class="reference internal" href="llms_explained.html"><span class="std std-doc">LLMs Explained</span></a>). This cycle is repeated across the entire dataset, refining the model’s ability to generate human-like text.</p>
+<p>The energy cost of this process is immense. The sheer volume of calculations demands continuous electricity consumption, and the hardware generates heat, requiring cooling systems that add to power usage. Data centers hosting these operations pull energy from the grid, often relying on fossil fuels, resulting in substantial carbon emissions. Beyond electricity, manufacturing GPUs, TPUs, and other specialized chips requires mining rare minerals, contributing to environmental degradation.</p>
+<p>Efforts to mitigate this impact focus on optimizing model architectures to reduce computational overhead, using energy-efficient chips, and shifting data centers to renewable energy sources. However, as models grow larger and training datasets expand, the fundamental challenge remains: training AI at this scale is resource-intensive with long-term environmental consequences.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Stage 2: Deployment and Inference</label><div class="sd-tab-content docutils">
+<p>Once a large language model is trained, it moves to the deployment phase, where it is made accessible to users through applications, chatbots, and various AI-powered tools. Unlike training, which happens once per model version, inference (the process of generating responses) occurs every time someone interacts with the system. Each query requires the model to process input text, run complex calculations through its neural network, and generate a response in real-time. While a single inference request consumes less energy than training, the cumulative cost is enormous due to the sheer volume of interactions happening worldwide every second.</p>
+<p>Inference is computationally expensive because LLMs are designed to predict text by running billions of parameters for every response. This requires high-performance servers operating continuously, housed in data centers that consume large amounts of electricity. These servers also generate heat, necessitating extensive cooling systems that further increase energy demands. Unlike traditional software, where execution is lightweight and static, AI-driven applications require constant, power-intensive computations for every user interaction.</p>
+<p>The environmental impact of deployment is long-term and persistent. Data centers must run 24/7, drawing power from the grid and contributing to ongoing carbon emissions. Hardware degradation over time leads to e-waste as older servers and chips become obsolete and are replaced. To reduce energy costs, companies are employing efficiency strategies such as quantization (reducing precision to speed up processing) and model distillation (creating smaller versions of large models), as well as moving AI processing tasks to specialized hardware optimized for inference.</p>
+<p>Despite these optimizations, the rapid growth of AI adoption continues to drive up energy consumption. Sustainable deployment depends on redesigning AI infrastructure to be more efficient, increasing reliance on renewable energy, and developing new techniques to reduce the computational footprint of large-scale inference. Without these changes, the environmental cost of AI deployment will only escalate as more people integrate these models into daily life.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Stage 3: Retraining</label><div class="sd-tab-content docutils">
+<p>Once deployed, an LLM requires continuous updates and retraining to stay accurate, adapt to new information, and improve performance. This process, often referred to as fine-tuning or retraining, ensures the model remains useful as language evolves, factual knowledge changes, and user needs shift. Unlike the initial training phase, which is performed once on a massive dataset, retraining happens periodically and can range from small updates to full-scale model refreshes.</p>
+<p>Retraining involves feeding new or corrected data into the model and re-adjusting its parameters. This can be done in several ways: fine-tuning on smaller, domain-specific datasets, reinforcement learning based on user feedback, or large-scale re-training from scratch using expanded datasets. Each of these approaches demands additional computational power, as the model must reprocess information, adjust billions of internal weights, and validate improvements through extensive testing.</p>
+<p>The energy impact of retraining is significant because it repeats many of the high-cost processes from the initial training phase. Running computations across massive datasets requires extensive server power, drawing electricity and producing heat, which in turn increases cooling demands. Frequent updates add to the ongoing carbon footprint of AI, as every new model version requires another round of energy-intensive processing. Additionally, storing and managing updated models across global infrastructure further compounds resource consumption.</p>
+<p>To reduce the environmental impact, researchers are exploring techniques like continual learning, where models update in smaller, incremental steps rather than undergoing full retraining cycles. Other strategies include more energy-efficient fine-tuning methods, such as parameter-efficient tuning (PET), which modifies only small portions of the model instead of recalibrating the entire network. Despite these optimizations, the need for regular updates ensures that AI remains an ongoing energy burden, making sustainable retraining strategies a critical focus for the future.</p>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">1. What can professors do to reduce the energy use of AI in their work?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There’s no single answer. AI’s environmental impact isn’t a black-and-white issue, and there’s no universal solution that works for everyone. It comes down to priorities.</p>
+<p class="sd-card-text">As a teacher, you need to decide how valuable AI is for your work and weigh that against the importance of reducing your environmental footprint. Is the benefit AI brings to your teaching worth its energy cost? Or are there areas where you can cut back without losing what makes it useful?</p>
+<p class="sd-card-text">That balance will look different for everyone. But what’s clear is that AI does consume a significant amount of energy. Every prompt adds up. The key is intentional use rather than mindless reliance.</p>
+<p class="sd-card-text">Here are some ways you can reduce your impact without giving up AI completely:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Share AI-Generated Materials – If you’ve used AI to create lesson plans, quizzes, or summaries, share them with colleagues. This avoids multiple teachers running the same energy-heavy AI processes for identical tasks.</p></li>
+<li><p class="sd-card-text">Teach About AI’s Energy Use – Include discussions in class about the environmental cost of AI. This builds awareness among students and encourages responsible usage.</p></li>
+<li><p class="sd-card-text">Use Simpler Alternatives – Not every task needs a massive LLM. For basic text generation or summarization, use smaller, less energy-intensive models instead of high-powered ones. For example you can use the following <a class="reference external" href="https://huggingface.co/spaces/AIEnergyScore/Leaderboard">open source ranking</a> which compares LLMs on energy effiency. However, obtaining information about non-open-source models remains difficult.</p></li>
+</ul>
+<p class="sd-card-text">Ultimately, AI is a tool, not a requirement. How much you use it, and how efficiently, is a decision only you can make. The goal isn’t to eliminate AI but to use it thoughtfully, with full awareness of both its benefits and its costs.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">2. Why Is AI Energy Consumption So Hard to Measure?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">AI’s energy use is difficult to track because it runs inside massive data centers alongside many other processes. Energy use is usually measured for the entire data center, not for individual AI models, making it hard to isolate AI’s exact footprint. Different companies also report energy usage in different ways, meaning there’s no clear way to compare numbers.</p>
+<p class="sd-card-text">Because of this, AI’s true energy impact remains unclear. Until companies are more transparent and follow consistent reporting standards, we can only rely on rough estimates.</p>
+</div>
+</details></section>
+<hr class="docutils" />
+<section id="danger-2-copyright-infringement">
+<h2>Danger 2: Copyright Infringement<a class="headerlink" href="#danger-2-copyright-infringement" title="Link to this heading">#</a></h2>
+<p>LLMs are trained on vast amounts of publicly available text, much of which is copyrighted material. AI does not memorize and reproduce exact passages verbatim (<a class="reference external" href="https://www.reuters.com/legal/murdoch-firms-dow-jones-new-york-post-sue-perplexity-ai-2024-10-21/">except in rare cases</a>), but it does extract patterns, styles, and ideas from its training data. This creates a gray area in copyright law as direct copying is illegal, learning from copyrighted material to generate new content has historically been allowed in areas like human learning and artistic inspiration. However, AI operates on a scale that challenges existing legal frameworks.</p>
+<p>Companies developing AI argue that training on copyrighted text falls under “fair use,” a legal doctrine allowing limited use of protected content for purposes like education, research, and transformative work. Critics, including authors, journalists, and publishers, counter that AI models benefit commercially from their work without permission or compensation. Lawsuits have been filed by artists, writers, and organizations claiming that AI-generated outputs derived from their copyrighted content constitute unauthorized reproduction.</p>
+<p>Governments and courts are now grappling with how to regulate AI while balancing innovation with intellectual property rights. Some proposals include requiring AI companies to obtain licenses for copyrighted material, compensating original creators, or restricting AI training datasets to public domain and open-license sources. The outcome of these legal battles will shape the future of AI development and determine whether large-scale model training must adhere to stricter copyright protections.</p>
+<p>As AI systems become more integrated into education and research, they raise significant copyright concerns. Understanding these issues is crucial for responsible use of AI. Below are answers to key questions to help you navigate AI’s copyright challenges.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">1. Who Owns AI-Generated Work?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Who Owns the Work?</p>
+<ul class="simple">
+<li><p class="sd-card-text">AI Developer? Usually not, unless their terms specify otherwise.</p></li>
+<li><p class="sd-card-text">Student? Only if they contribute enough originality through detailed prompts, edits, or artistic decisions.</p></li>
+<li><p class="sd-card-text">No One? If the AI generates content with minimal human involvement, there’s likely no valid copyright claim.</p></li>
+</ul>
+<p class="sd-card-text">What Counts as Human Input?</p>
+<ul class="simple">
+<li><p class="sd-card-text">Just typing a short prompt isn’t enough to claim copyright.</p></li>
+<li><p class="sd-card-text">Under <a class="reference external" href="https://intellectual-property-helpdesk.ec.europa.eu/news-events/news/artificial-intelligence-and-copyright-use-generative-ai-tools-develop-new-content-2024-07-16-0_en">EU law</a> the making of edits, refining outputs, and adding creative choices that reflect human expression could qualify the work for copyright. Keep in mind that copyright law is, to a large extent, a matter of national law, so specifics might differ between countries within the EU.</p></li>
+</ul>
+</div>
+</details><div class="seealso dropdown admonition">
+<p class="admonition-title">TU Delfts policy on copyright</p>
+<p>Check out the <a class="reference external" href="https://www.tudelft.nl/en/library/support/copyright">TU Delft Copyrighting Support Page</a> for more information.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="danger-3-bias">
+<h2>Danger 3: Bias<a class="headerlink" href="#danger-3-bias" title="Link to this heading">#</a></h2>
+<p>AI tools are powerful, but they can also reflect or amplify unfair patterns from the data they learn from. To use AI responsibly in teaching and research, it’s important to understand the fundamentals. Bias enters AI systems primarily through three key areas: the training data, the algorithms used to process it, and the way humans interact with and reinforce the model’s outputs.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Bias in Training Data</label><div class="sd-tab-content docutils">
+<p>Large language models are trained on vast amounts of text collected from books, articles, websites, and social media. These sources contain existing societal biases about race, gender, culture, and more because they are written by humans with their own perspectives and prejudices. If certain viewpoints dominate the dataset while others are underrepresented, the model learns and perpetuates those imbalances. For example, if historical texts portray leadership as predominantly male, the model may generate biased assumptions about gender roles.</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Algorithmic Bias</label><div class="sd-tab-content docutils">
+<p>Even if the training data were perfectly balanced (which is virtually impossible), the way AI processes information can introduce further bias. The model assigns weight to different words and concepts based on statistical patterns, but it does not understand fairness or ethical considerations. Certain ideas may be overemphasized, and others may be filtered out in ways that unintentionally reinforce stereotypes. Additionally, design choices such as how a model prioritizes diversity over accuracy can skew outputs in unintended ways. For example, in an effort to promote diversity, Google’s AI image generator produced <a class="reference external" href="https://blog.google/products/gemini/gemini-image-generation-issue/">historically inaccurate images</a>, such as depicting racially diverse Nazi soldiers and reimagining the Founding Fathers with varied ethnicities. These outputs led to public backlash, highlighting how design decisions intended to enhance inclusivity can inadvertently introduce new forms of bias and misrepresentation.</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Reinforcement Through Human Feedback</label><div class="sd-tab-content docutils">
+<p>Many AI models undergo fine-tuning through reinforcement learning, where human reviewers help shape responses by ranking preferred outputs. If these reviewers have unconscious biases, they may inadvertently guide the model toward responses that align with their own perspectives. Moreover, real-world user interactions can reinforce biases. For example, if users mostly interact with content that leans in one direction or has specific characteristics, the model might begin to favor these patterns over others. This happens because the AI learns from past interactions, so if certain topics or types of content are clicked on more, it “learns” that these responses are preferred, making it more likely to produce similar outputs in the future.</p>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">1. What are the most common types of bias in Al?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+<th class="head"><p class="sd-card-text">Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><strong>Data Bias</strong></p></td>
+<td><p class="sd-card-text">AI models learn from datasets that may reflect societal prejudices or exclude certain groups.</p></td>
+<td><p class="sd-card-text">Facial recognition trained on light-skinned individuals performs poorly on darker-skinned individuals.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><strong>Representation Bias</strong></p></td>
+<td><p class="sd-card-text">Underrepresentation of certain demographics or viewpoints in training data skews AI outputs.</p></td>
+<td><p class="sd-card-text">AI trained on Western sources may prioritize Western perspectives over others.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><strong>Confirmation Bias</strong></p></td>
+<td><p class="sd-card-text">AI reinforces user biases by serving content aligning with past interactions.</p></td>
+<td><p class="sd-card-text">Search engines creating echo chambers by showing users only what aligns with their beliefs.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><strong>Labeling Bias</strong></p></td>
+<td><p class="sd-card-text">Subjective or culturally influenced judgments by human annotators may introduce biases.</p></td>
+<td><p class="sd-card-text">If annotators categorize outputs as “undesirable,” AI internalizes these biases.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><strong>Automation Bias</strong></p></td>
+<td><p class="sd-card-text">Users may trust AI-generated content excessively, assuming it is unbiased.</p></td>
+<td><p class="sd-card-text">Students learning incorrect information from AI-generated educational resources.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">2. What practical steps can professors take to reduce Al bias?</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Teaching AI literacy is essential for helping students recognize and challenge biased outputs. Professors can encourage this by having students compare AI-generated responses with human perspectives, analyze how AI misinterprets nuanced topics, or explore ethical implications of AI decision-making. Additionally, fostering transparency in AI use is crucial. Students should be required to document how AI influenced their work, noting any biases they observe in the system’s outputs. This practice promotes critical engagement with AI rather than passive reliance on its responses.</p>
+</div>
+</details><div class="seealso dropdown admonition">
+<p class="admonition-title">Image Bias Explorer</p>
+<p>Explore how text-to-image models represent different professions <a class="reference external" href="https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer">here</a> and see the biases these may contain.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="dangers-specific-to-higher-level-education">
+<h2>Dangers specific to Higher-Level Education<a class="headerlink" href="#dangers-specific-to-higher-level-education" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Uneven Playing Field</label><div class="sd-tab-content docutils">
+<p>As some students will be more AI-literate, giving them an unfair advantage compared to others.</p>
+<ul class="simple">
+<li><p><strong>Potential solution</strong>: Provide theory-based summaries to all students. While this may seem counterintuitive at first, it ensures equal access to foundational knowledge. This also allows you to delve deeper into theory during lessons as students will all share the same foundation.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+Assignment Shortcutting</label><div class="sd-tab-content docutils">
+<p>Students may use AI to complete assignments quickly, potentially limiting the learning process.</p>
+<ul class="simple">
+<li><p><strong>Potential solution</strong>: Design AI-resistant assignments by focusing on tasks where AI performs poorly, such as specific use cases it isn’t well-trained on, or by requiring students to personalize AI outputs to their own lives. This approach encourages deeper understanding. For  guidance on what AI is bad at refer back to <a class="reference internal" href="llms_explained.html#things-generative-ai-struggles-with"><span class="std std-ref">LLMs Explained</span></a>.
+Other practical ideas include:</p>
+<ul>
+<li><p>Making assignments more engaging and clear to motivate students to participate.</p></li>
+<li><p>Breaking work into smaller, iterative tasks (e.g., multiple deadlines instead of one large one) to make it less daunting.</p></li>
+<li><p>Encouraging collaborative group work to foster problem-solving and teamwork.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
+Student Engagement Drop</label><div class="sd-tab-content docutils">
+<p>Students may no longer see the value in going to class.</p>
+<ul class="simple">
+<li><p><strong>Potential solution</strong>: Adapt and innovate lecture formats to make attending class worthwhile. For example, create more interactive lessons where students collaborate and engage with the material actively. Refer to the <a class="reference internal" href="lesson_planning.html"><span class="std std-doc">Lesson Planning Module</span></a> to see how to do this.</p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="llms_explained.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">LLMs Explained</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="prompt_engineering.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Prompt Engineering</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-1-environmental-impact">Danger 1: Environmental Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-2-copyright-infringement">Danger 2: Copyright Infringement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danger-3-bias">Danger 3: Bias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dangers-specific-to-higher-level-education">Dangers specific to Higher-Level Education</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

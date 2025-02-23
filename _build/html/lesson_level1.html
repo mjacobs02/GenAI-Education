@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Level 1 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lesson_level1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Level 2" href="lesson_level2.html" />
+    <link rel="prev" title="2. Lesson Planning" href="lesson_planning.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="module1_intro.html">1. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="gen_ai_education.html">Gen AI in Education</a></li>
+<li class="toctree-l2"><a class="reference internal" href="llms_explained.html">LLMs Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dangers_ai.html">Dangers of AI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ai_tool_database.html">AI Tools Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="lesson_planning.html">2. Lesson Planning</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Level 1: Beginner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Expert</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flesson_level1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/lesson_level1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Level 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-1-think-pair-share-activity">Prompt 1: Think-Pair-Share Activity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-2-multiple-choice-questions">Prompt 2: Multiple Choice Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-3-find-a-relevant-analogy">Prompt 3: Find a Relevant Analogy</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="level-1">
+<h1>Level 1<a class="headerlink" href="#level-1" title="Link to this heading">#</a></h1>
+<p>This section will break down three simple ways to leverage AI immediately to help in your lessons.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Video:</strong> Walkthrough of the prompts in this section</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/9gwQJee2LAc?start=0" 
+            title="Embedded Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+</div>
+</details><hr class="docutils" />
+<section id="prompt-1-think-pair-share-activity">
+<h2>Prompt 1: Think-Pair-Share Activity<a class="headerlink" href="#prompt-1-think-pair-share-activity" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What it is: This prompt helps professors design an engaging Think-Pair-Share activity tailored to their specific subject or topic. The structure includes three phases:</p>
+<ol class="arabic simple">
+<li><p>Think: Students individually reflect on a thought-provoking question.</p></li>
+<li><p>Pair: They discuss their ideas with a partner.</p></li>
+<li><p>Share: Insights are shared with the larger group for collective learning.</p></li>
+</ol>
+</li>
+<li><p>When to use it:</p>
+<ul>
+<li><p>To spark meaningful discussions in the classroom.</p></li>
+<li><p>To break up lectures and incorporate active learning.</p></li>
+<li><p>To build teamwork and critical analysis skills during lessons.</p></li>
+</ul>
+</li>
+<li><p>How it benefits professors:
+Professors can integrate this prompt into workflows to quickly find good think pair share activities based on topics.</p></li>
+</ul>
+<div class="important dropdown admonition">
+<p class="admonition-title">Think Pair Share Prompt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please provide the topic or concept you want to design a Think-Pair-Share activity for:
+
+***********************
+**[Insert Topic Here]**
+***********************
+
+**Your Role:**
+You are an expert in designing engaging and effective Think-Pair-Share activities that foster collaborative learning and critical thinking. Your audience consists of university students at TU Delft, so the activity should be tailored to their academic interests in engineering, technology, policy, and management.
+
+**Task:**
+Based on the provided topic, design a Think-Pair-Share activity that is relevant, fun, and encourages meaningful discussion. The activity should include:
+
+1. **The Think Phase:**
+    - Pose a thought-provoking and specific question or scenario related to the topic.
+    - Ensure the question is clear, engaging, and requires students to apply their understanding of the topic.
+2. **The Pair Phase:**
+    - Provide instructions for students to discuss their thoughts with a partner.
+    - Encourage them to compare answers, challenge assumptions, or collaborate to refine their understanding.
+3. **The Share Phase:**
+    - Design a simple yet interactive way for pairs to share their insights with the class. Make it engaging and easy to implement on the spot.
+
+**Guidelines:**
+
+- Ensure the activity is simple to execute in any classroom setting.
+- Keep the questions or scenarios relevant and challenging enough to spark curiosity and conversation.
+- Suggest ways to make the Share phase fun and engaging without requiring additional preparation or materials.
+
+**Example Output:**
+
+- For a topic like &quot;AI Ethics,&quot; the Think phase might ask students to consider, &quot;What would you do if your self-driving car had to make an ethical choice in an accident scenario?&quot;
+- In the Pair phase, students discuss their answers and analyze how their choices differ.
+- The Share phase could involve pairs presenting their most interesting disagreement or insight in a quick, 30-second summary.
+
+**Additional Output:**
+Provide clear, concise bullet points that can be included on presentation slides to explain the task and activity to students. These should outline the steps for the Think, Pair, and Share phases in simple and engaging language suitable for immediate classroom use.
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="prompt-2-multiple-choice-questions">
+<h2>Prompt 2: Multiple Choice Questions<a class="headerlink" href="#prompt-2-multiple-choice-questions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What it is:
+A tool to help professors create high-quality multiple-choice questions. Each MCQ includes one correct answer, three plausible distractors, and an explanation of the answer.</p></li>
+<li><p>When to use it:</p>
+<ul>
+<li><p>For quizzes, exams, or formative assessments.</p></li>
+<li><p>To test student comprehension of key concepts after a lecture or module.</p></li>
+</ul>
+</li>
+<li><p>How it benefits professors:
+Helps professors quickly prepare exam questions to integrate into lessons ensuring students understand essential topics.</p></li>
+</ul>
+<div class="important dropdown admonition">
+<p class="admonition-title">Multiple Choice Questions Prompt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please provide the topic or subject area for which you want to create multiple-choice questions:
+
+***********************
+**[Insert Topic Here]**
+***********************
+
+**Role of the Assistant:**
+You are an expert educator specializing in creating assessment materials for university-level students.
+
+**Task:**
+Based on the topic provided, generate five multiple-choice questions that cover key concepts related to the subject. Each question should:
+
+- Be clear and concise.
+- Include one correct answer and three plausible distractors.
+- Test understanding of important ideas within the topic.
+
+Additionally, provide:
+
+- The correct answer for each question.
+- A brief explanation (1-2 sentences) of why the correct answer is appropriate.
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="prompt-3-find-a-relevant-analogy">
+<h2>Prompt 3: Find a Relevant Analogy<a class="headerlink" href="#prompt-3-find-a-relevant-analogy" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What it is:
+A creative prompt that generates engaging analogies to explain complex concepts. These analogies are tailored to the interests of university students, especially in engineering, technology, policy, and management.</p></li>
+<li><p>When to use it:</p>
+<ul>
+<li><p>While introducing difficult concepts to break the ice.</p></li>
+<li><p>To clarify abstract topics during a lecture.</p></li>
+<li><p>In study materials, presentations, or online resources.</p></li>
+</ul>
+</li>
+<li><p>How it benefits professors:
+Professors can use the analogies to make their teaching more engaging and accessible. This helps maintain student interest, particularly for dense or technical topics.</p></li>
+</ul>
+<div class="important dropdown admonition">
+<p class="admonition-title">Relevant Analogy Prompt</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please provide the topic or concept you want to explain:
+
+***********************
+**[Insert Topic Here]**
+***********************
+
+**Your Role:**
+You are a creative thinker and skilled educator specialising in designing fun, entertaining, and out-of-the-box analogies to explain complex topics. Your audience consists of university students studying at TU Delft, so your analogies should be both engaging and tailored to their interests in engineering, technology, policy, and management.
+
+**Task:**
+Based on the provided topic, propose five unique and fun analogies that simplify the concept. Each analogy should:
+
+1. Be entertaining and out-of-the-box, sparking curiosity and engagement.
+2. Clearly explain the topic in a way that feels intuitive and memorable.
+3. Relate to things students find amusing or interesting, like pop culture, quirky everyday experiences, or creative scenarios.
+
+**Guidelines:**
+
+- Avoid overly serious or dry explanations. Make the analogies lively and fun while still effectively teaching the concept.
+- Include unexpected or humorous comparisons to keep the examples lighthearted and relatable.
+- Keep the explanations concise and ensure they make the topic easy to understand.
+
+**Example Topics:**
+
+- A policy framework could be compared to a “video game where players need to navigate complex rules to unlock the next level.”
+- A blockchain could be explained as a “group project where everyone keeps their own identical copy of the same report, so no one can cheat.”
+- Feedback loops in systems could be likened to “a DJ adjusting the volume at a party—too loud, and it creates ear-piercing feedback; too soft, and no one dances.”
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="note admonition">
+<p class="admonition-title">Personal Note</p>
+<p>If you have another specific use case that’s not covered, try creating your own by referring to the <a class="reference internal" href="ai_tool_database.html"><span class="std std-doc">Prompt Engineering</span></a> section.</p>
+<p>You can also save this page as a PDF, upload it to your conversation, and say something like: I want you to create a prompt in the same format and style as the ones provided. First, ask me 5 questions that will improve the response you will be giving me.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lesson_planning.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2. Lesson Planning</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="lesson_level2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Level 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-1-think-pair-share-activity">Prompt 1: Think-Pair-Share Activity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-2-multiple-choice-questions">Prompt 2: Multiple Choice Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-3-find-a-relevant-analogy">Prompt 3: Find a Relevant Analogy</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
