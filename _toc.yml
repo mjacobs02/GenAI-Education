@@ -1,0 +1,26 @@
+format: jb-book
+root: intro
+
+chapters:
+  - file: module1_intro
+    title: "1. Introduction"
+    sections:
+      - file: gen_ai_education
+        title: "Gen AI in Education"
+      - file: llms_explained
+        title: "LLMs Explained"
+      - file: dangers_ai
+        title: "Dangers of AI"
+      - file: prompt_engineering
+        title: "Prompt Engineering"
+      - file: ai_tool_database
+        title: "AI Tools Database"
+  - file: lesson_planning
+    title: "2. Lesson Planning"
+    sections:
+      - file: lesson_level1
+        title: "Level 1: Beginner"
+      - file: lesson_level2
+        title: "Level 2: Intermediate"
+      - file: lesson_level3
+        title: "Level 3: Expert"
