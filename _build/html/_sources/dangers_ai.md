@@ -1,6 +1,6 @@
 # Dangers of AI
 
-```{dropdown} Audio summary made by NotebookLM 
+```{dropdown} **Audio Summary** of this page made by NotebookLM 
 <div style="text-align: center;">
     <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/3ZqempQtVzA?start=0" 
@@ -10,12 +10,9 @@
             allowfullscreen>
     </iframe>
 </div>
+The summary above was created using generative AI through NotebookLM. This audio overview covers the content on this page of the book for those who prefer listening to a summary instead of reading the document.
 ```
-
-There are many dangers of AI and sometimes its hard to keep oversight and really understand where to focus on. This page intends to walk you through some of the main challenges of AI and important things to consider.
-
-The video below gives a great overview of the most important current dangers of AI:
-
+```{dropdown} **Optional Video:** Luccioni, Dangers of AI
 <div style="text-align: center;">
     <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/eXdVDhOGqoE" 
@@ -25,6 +22,8 @@ The video below gives a great overview of the most important current dangers of 
             allowfullscreen>
     </iframe>
 </div>
+```
+There are many dangers of AI and sometimes its hard to keep oversight and really understand where to focus on. This page intends to walk you through some of the main challenges of AI and important things to consider.
 
 ## Danger 1: Environmental Impact
 The environmental impact of AI is significant. [Research from 2019](https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243) shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI [it is projected](https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3) that by 2027 AI could consume the energy equivalent of a country like the Netherlands.
@@ -35,7 +34,7 @@ The environmental impact of AI is significant. [Research from 2019](https://web.
 :align: center
 ```
 
-To better understand AI’s true impact, we need to examine three key stages: training, deployment (inference), and retraining/updates. While the training phase is initially very energy-intensive, the ongoing use during the deployment and inference phase can surpass the environmental impact of training due to its continuous operation. For example, [Google reported](https://arxiv.org/pdf/2311.16863) that 60% of its AI-related electricity comes from running models, while only 40% is from training. By recognizing the impact of each stage allows for a clearer picture of AI’s long-term energy demands and environmental consequences.
+To better understand AI’s true impact, we need to examine three key stages: training, deployment (inference), and retraining/updates. While the training phase is initially very energy-intensive, the ongoing use during the deployment and inference phase can surpass the environmental impact of training due to its continuous operation. For example, [Google reported](https://arxiv.org/pdf/2311.16863) that 60% of its AI-related electricity comes from running models, while only 40% is from training. Recognizing the impact of each stage allows for a clearer picture of AI’s long-term energy demands and environmental consequences.
 
 ````{tab-set}
 ```{tab-item} Stage 1: Training
@@ -101,7 +100,7 @@ Companies developing AI argue that training on copyrighted text falls under "fai
 
 Governments and courts are now grappling with how to regulate AI while balancing innovation with intellectual property rights. Some proposals include requiring AI companies to obtain licenses for copyrighted material, compensating original creators, or restricting AI training datasets to public domain and open-license sources. The outcome of these legal battles will shape the future of AI development and determine whether large-scale model training must adhere to stricter copyright protections.
 
-As AI systems become more integrated into education and research, they raise significant copyright concerns. Understanding these issues is crucial for responsible use of AI. Below are answers to key questions to help you navigate AI’s copyright challenges.
+As AI systems become more integrated into education and research, they raise significant copyright concerns. Understanding these issues is crucial for responsible use of AI. 
 
 ```{dropdown} 1. Who Owns AI-Generated Work?
 Who Owns the Work?
@@ -130,7 +129,7 @@ Large language models are trained on vast amounts of text collected from books, 
 ```{tab-item} Algorithmic Bias
 Even if the training data were perfectly balanced (which is virtually impossible), the way AI processes information can introduce further bias. The model assigns weight to different words and concepts based on statistical patterns, but it does not understand fairness or ethical considerations. Certain ideas may be overemphasized, and others may be filtered out in ways that unintentionally reinforce stereotypes. Additionally, design choices such as how a model prioritizes diversity over accuracy can skew outputs in unintended ways. For example, in an effort to promote diversity, Google's AI image generator produced [historically inaccurate images](https://blog.google/products/gemini/gemini-image-generation-issue/), such as depicting racially diverse Nazi soldiers and reimagining the Founding Fathers with varied ethnicities. These outputs led to public backlash, highlighting how design decisions intended to enhance inclusivity can inadvertently introduce new forms of bias and misrepresentation.
 ```
-```{tab-item} Reinforcement Through Human Feedback
+```{tab-item} Human Bias
 Many AI models undergo fine-tuning through reinforcement learning, where human reviewers help shape responses by ranking preferred outputs. If these reviewers have unconscious biases, they may inadvertently guide the model toward responses that align with their own perspectives. Moreover, real-world user interactions can reinforce biases. For example, if users mostly interact with content that leans in one direction or has specific characteristics, the model might begin to favor these patterns over others. This happens because the AI learns from past interactions, so if certain topics or types of content are clicked on more, it "learns" that these responses are preferred, making it more likely to produce similar outputs in the future.
 ```
 ````

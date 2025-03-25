@@ -230,7 +230,8 @@ Transforming academic papers into engaging learning materials doesn’t have to 
 **Outcome**: An engaging way for students to interact with academic papers.
 ```{admonition} Personal Note
 :class: note
-Though students could create these themselves, it’s more effective for the professor to do it. This avoids unnecesaary repetition (which is better for the environment), encourages more students to engage with the papers (as the barrier to do so if extremely low), and gives the professor control over the material, enabling targeted follow-up assignments.
+Though students could create these themselves, it’s more effective for the professor to do it. This avoids unnecessary repetition (which is better for the environment), encourages more students to engage with the papers (as the barrier to do so if extremely low), and gives the professor control over the material, enabling targeted follow-up assignments.
 ```
 ---
 
+This concludes the current version of the book. Remember, updates and new sections will continue to be added. If you found it useful, share it with your network. To return to the beginning, [click here](intro.md).

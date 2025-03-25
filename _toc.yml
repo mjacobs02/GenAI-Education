@@ -24,3 +24,5 @@ chapters:
         title: "Level 2: Intermediate"
       - file: lesson_level3
         title: "Level 3: Expert"
+  - file: Outro
+    title: "3. Thank You"

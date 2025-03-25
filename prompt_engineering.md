@@ -1,10 +1,7 @@
 # Prompt Engineering
 
-This section is all about prompting, a fundamental skill for leveraging AI effectively. Being able to prompt well is like having the master key to a treasure chest: it unlocks the full potential of what AI can offer. Whether you’re new to prompting or already have a foundation, I’d recommend starting with the video. Even if the basics seem familiar, it offers a fresh perspective and introduces a six-part formula for crafting effective prompts. Follow this by delving into the summary to deepen your understanding of why these principles work so well.
+This section is all about prompting, a fundamental skill for using AI effectively. Being able to prompt well is like having the master key to a treasure chest: it unlocks the full potential of what AI can offer. Whether you’re new to prompting or already have a foundation, I'd recommend starting with the video. Even if the basics seem familiar, it offers a fresh perspective and introduces a six-part formula for crafting effective prompts. 
 
-## Video
-The video below introduces a 6-part formula for crafting effective prompts for ChatGPT and other large language models: Task, Context, Exemplars, Persona, Format, and Tone. 
-I would highly recommend watching this video as it gives a geat outline to what makes us a good prompt. If you focus on consistently applying these 6 principles you shouldn't have a problem prompting in the future.
 <div style="text-align: center;">
     <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/jC4v5AS4RIM" 
@@ -15,23 +12,29 @@ I would highly recommend watching this video as it gives a geat outline to what 
     </iframe>
 </div>
 
----
-
 ## Summary
-1. **Task is Key**: State what you want the AI to do. Examples: "Generate potential research questions related to...", "Summarize key findings from these research papers...", "Create a syllabus outline for a course on...".
-2. **Context is Crucial**: Provide background information. Who is the target audience (students, fellow researchers)? What are the learning objectives? Example: "Create a syllabus outline for a first-year bachelor course on sustainable engineering, focusing on circular economy principles."
-3. **Exemplars Enhance Output**: Give examples of the desired output. This drastically improves quality. Example: If asking for research questions, provide examples of well-formulated research questions in the relevant field. If asking for a syllabus, provide an example syllabus or a link to one.
-4. **Persona and Format Shape Response**: Tell ChatGPT who it should be "acting" as. Example: "Act as a leading expert in blockchain..." or "Act as an experienced TU Delft professor designing a new course...". This is adds context implicitly. Instead of explicitly stating "professors value conciseness, passion for the subject, and use simple language," you simply say "act as a university professor," and the LLM draws on its training data to infer these characteristics.
-5. **Choose the right Format**: Tell ChatGPT how you want the output formatted. Examples: "Use bullet points," "Create a table," "Write a concise abstract," "Format as a LaTeX document."
-6. **Tone Matters**: Define the desired tone of voice. Examples: "Use a formal, academic tone," "Use an engaging and accessible tone for undergraduate students," "Use a concise and technical tone suitable for a scientific publication."
+1. **Define the Task Clearly**: State what you want the AI to do. Examples: "Generate potential research questions related to...", "Summarize key findings from these research papers...", "Create a syllabus outline for a course on...".
+2. **Provide Context**: Provide background information. Who is the target audience (students, fellow researchers)? What are the learning objectives? Example: "Create a syllabus outline for a first-year bachelor course on sustainable engineering, focusing on circular economy principles."
+3. **Supply exemplars**: Give examples of the desired output. This drastically improves quality. Example: If asking for research questions, provide examples of well-formulated research questions in the relevant field. If asking for a syllabus, provide an example syllabus or a link to one.
+4. **Assign a Persona**: Tell ChatGPT who it should be "acting" as. Example: "Act as a leading expert in blockchain..." or "Act as an experienced TU Delft professor designing a new course...". This adds context implicitly. Instead of explicitly stating "professors value conciseness, passion for the subject, and use simple language," you simply say "act as a university professor," and the LLM draws on its training data to infer these characteristics.
+5. **Specify the Format**: Tell ChatGPT how you want the output formatted. Examples: "Use bullet points," "Create a table," "Write a concise abstract," "Format as a LaTeX document."
+6. **Set the Tone**: Define the desired tone of voice. Examples: "Use a formal, academic tone," "Use an engaging and accessible tone for undergraduate students," "Use a concise and technical tone suitable for a scientific publication."
 
 ---
 
 ## Other Helpful Tips
-```{dropdown} Advanced customizability
-Many AI tools include advanced customization features with names that differ by platform. Examples include custom instructions, memory, and GPTs (AI models tailored to specific needs). These tools can enhance workflow efficiency and provide additional flexibility, but they’re generally only useful for advanced scenarios.
+```{dropdown} **Optional Video:** Deep dive into how LLMs can be used
+This video dives deep into all the different tools and ways to engage with LLMs. Its very helpful but also long so feel free to jump ahead to the sections that catch your interest.
 
-If your needs are simple, you likely won’t need these options. For more complex projects, though, they can make a difference.
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube-nocookie.com/embed/EWvNQjAaOHw" 
+            title="YouTube Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
 ```
 
 ```{dropdown} How to address hallucinations

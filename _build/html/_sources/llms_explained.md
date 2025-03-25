@@ -4,7 +4,7 @@ This section provides a simple visualization of how LLMs work. I recommend start
 
 <div style="text-align: center;">
     <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/LPZh9BOjkQs?start=0" 
+            src="https://www.youtube-nocookie.com/embed/LPZh9BOjkQs" 
             title="LLMs Explained" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -30,9 +30,8 @@ Explore an in-depth, multi-episode series by 3Blue1Brown: [Neural Networks by 3B
 
 ```{admonition} Personal Note
 :class: note
-You can use this information to make more AI-proof. For instance, the [personalization prompt](lesson_level2.md#prompt-2-ai-proof-through-personalised-reflection-questions) asks for reflection, creativity and reasoning, which is hard for AI to mimic.
+You can use this information to make more AI-proof assignments. For instance, the [personalization prompt](lesson_level2.md#prompt-2-ai-proof-through-personalised-reflection-questions) asks for reflection, creativity and reasoning, which is hard for AI to mimic.
 ```
-
 
 ````{tab-set}
 ```{tab-item} Math
@@ -42,18 +41,15 @@ Although very effective for linguistic tasks, math needs clear logic and reasoni
 
 To limit the effect of this, specific tools have been introduced like creating a python code to run calculations, increasing the mathematical accuracy. Even with these improvements, it’s important to be aware that generative AI still struggles with math problems. This is particularly the case with math problems that it hasn't yet been trained on.
 
----
 ![Generative AI Struggles with Math](./Images/Image1_StrugglesMath.png)
 
----
-
-To address this problem, newer models like GPT-o1, Gemini 2.0 Flash Thinking and DeepSeek R1 have incorporated techniques that break the problem down in steps (attempting to mimic human reasoning). This breaks the predictive problem into smaller stages which makes the final prediction more likely to track the right mathematic pattern. Besides this other AI tools such as Google Deepminds AlphaProof are specialised specifically on math hence excelling in this field.
+While LLMs struggle with math, specialized AI like DeepMind’s AlphaProof excels. Using reinforcement learning, AlphaProof solved International Mathematical Olympiad problems at a [silver medal level](https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/), scoring 28/42 which is on par with top human competitors. This shows AI can master math when designed for reasoning rather than pattern prediction.
 ```
 
 ```{tab-item} Creativity
 Generative AI can enhance creativity when combined with human capabilities and critical oversight, but it faces significant limitations that highlight the need for collaboration. Firstly, AI lacks intent. Artists, researchers, and thinkers create with goals in mind, whether communicating an idea, solving a problem, or connecting to an experience in the real world. Their intent gives direction and meaning to the creative process, shaping which ideas are pursued, refined, or discarded. Thus, any perceived creativity comes from interaction with users who guide and refine its suggestions. Without human evaluation, AI cannot determine the value or relevance of its ideas. Worse yet, AI-generated ideas can anchor students, limiting their ability to think originally.
 
-Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential) for nuanced, innovative ideas. As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a [study](https://arxiv.org/abs/2409.04109) found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.
+Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential grasping nuance). As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a [study](https://arxiv.org/abs/2409.04109) found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.
 
 Creativity involves selection and connection. Humans excel at linking unrelated ideas and determining their worth, while AI, like a kaleidoscope, rearranges familiar patterns without judging their value. 
 ```
@@ -63,16 +59,42 @@ LLMs struggle with reasoning because they predict words based on patterns rather
 
 Furthermore, LLMs struggle with numerical reasoning, often misinterpreting basic questions and making bigger mistakes in complex math because they rely on pattern recognition instead of logical rules (refer to math tab). This issue extends to sequential decision-making, where LLMs fail to plan a series of steps while considering real-world consequences. Picture a chef who’s never learned the underlying principles of cooking. They can reproduce recipes by copying ingredient lists and instructions word for word, often creating impressive-looking dishes. But if they miss some ingredients they'll struggle creating a good dish as they don't grasp how flavors actually work together.  
 
-LLMs don't actually think, they predict text based on patterns. When given the river-crossing puzzle, they recall similar problems, often with extra rules (like a wolf that might eat the goat), so they assume complexity and generate an overcomplicated answer. A human, using basic logic, immediately sees the simplest solution: just take the goat across. The difference is that humans understand the actual problem, while LLMs just match patterns. Even if developers correct specific mistakes, LLMs will still make these errors because they don’t truly reason, they just guess based on past examples.
+LLMs don't actually think, they predict text based on patterns. When given the river-crossing puzzle, they recall similar problems, often with extra rules (like a wolf that might eat the goat), so they assume complexity and generate an overcomplicated answer. A human, using basic logic, immediately sees the simplest solution: just take the goat across. The difference is that humans understand the actual problem, while LLMs just match patterns. As seen in the image, the LLM incorrectly predicts the pattern, generating an inefficient solution where the man travels back and forth unnecessarily. Even if developers correct specific mistakes, LLMs will still make these errors because they don’t truly reason, they just guess based on past examples. However, many newer AI tools now incorporate more advanced reasoning models, which take longer to process but attempt to mimic human-like thinking.
 
----
-![Generative AI Struggles with Math](Images/Image1_StrugglesReasoning.png)
+![Generative AI Struggles with Reasoning](Images/Image1_StrugglesReasoning.png)
 
----
-
-Research is divided on whether techniques like Chain-of-Thought (CoT) prompting improves LLM reasoning. Some [studies](https://arxiv.org/abs/2212.10001) suggest it helps by structuring existing reasoning skills, while [others](https://arxiv.org/abs/2401.09042) argue it does not teach new skills or fill knowledge gaps. Nevertheless taking the time to review step-by-step logic transforms these systems from black boxes into more understandable processes where mistakes can be caught early on.
 ```
 ````
 
+## The future of generative AI
 
+Generative AI is moving away from massive language models like GPT-4 toward specialized “reasoning models.” These newer models focus on logical, step-by-step thinking (often called “chain of thought”) and target tasks like math proofs, complex coding, and research. Companies such as OpenAI, Google, and xAI are making this shift because the returns on ever-larger LLMs (requiring tens of thousands of GPUs and costing hundreds of millions to train) are hitting a plateau. Reasoning models, by contrast, aim to achieve better accuracy with less computational overhead.
 
+An example is OpenAI’s “o1,” which shows major gains in math Olympiad accuracy compared to GPT-4o, though it can be pricier to use. Others, like DeepSeek-R1, are significantly cheaper, indicating ongoing exploration of cost-effective designs. This pivot is driven by the need for deeper problem-solving and more sustainable compute costs. As a result, the future of generative AI seems to lie in reasoning-centric systems rather than simply scaling up traditional LLMs.
+
+```{list-table}
+:header-rows: 1
+
+* - Metric
+  - o1
+  - GPT-4o
+  - Human Experts
+* - **Math Olympiad accuracy**
+  - 83.3%
+  - 13.4%
+  - -
+* - **PhD-level questions accuracy**
+  - 78%
+  - 56.1%
+  - 69.7%
+* - **Codeforces percentile**
+  - 89th
+  - -
+  - -
+* - **USA Math Olympiad ranking**
+  - Top 500 high school students
+  - -
+  - -
+  ```
+
+This table, based on numbers from [MIT Technology Review](https://www.technologyreview.com/2024/09/17/1104004/why-openais-new-model-is-such-a-big-deal/), highlights the superior performance of reasoning models in specialized tasks, underscoring their potential for future AI development.

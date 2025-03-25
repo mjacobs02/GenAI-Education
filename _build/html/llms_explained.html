@@ -237,53 +237,6 @@
 
 
 
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fllms_explained.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -388,6 +341,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#things-generative-ai-struggles-with">Things generative AI struggles with</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-future-of-generative-ai">The future of generative AI</a></li>
 </ul>
             </nav>
         </div>
@@ -404,7 +358,7 @@ document.write(`
 <p>This section provides a simple visualization of how LLMs work. I recommend starting by watching the video below to get a basic understanding of how these systems function.</p>
 <div style="text-align: center;">
     <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/LPZh9BOjkQs?start=0" 
+            src="https://www.youtube-nocookie.com/embed/LPZh9BOjkQs" 
             title="LLMs Explained" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -429,7 +383,7 @@ document.write(`
 <h2>Things generative AI struggles with<a class="headerlink" href="#things-generative-ai-struggles-with" title="Link to this heading">#</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Personal Note</p>
-<p>You can use this information to make more AI-proof. For instance, the <a class="reference internal" href="lesson_level2.html#prompt-2-ai-proof-through-personalised-reflection-questions"><span class="std std-ref">personalization prompt</span></a> asks for reflection, creativity and reasoning, which is hard for AI to mimic.</p>
+<p>You can use this information to make more AI-proof assignments. For instance, the <a class="reference internal" href="lesson_level2.html#prompt-2-ai-proof-through-personalised-reflection-questions"><span class="std std-ref">personalization prompt</span></a> asks for reflection, creativity and reasoning, which is hard for AI to mimic.</p>
 </div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -438,16 +392,14 @@ Math</label><div class="sd-tab-content docutils">
 <p>Generative AI struggles with math because large language models are trained on a vast amount of text data, which helps them predict the next word based on patterns in the data.</p>
 <p>Although very effective for linguistic tasks, math needs clear logic and reasoning. As a result, AI may produce answers that sound plausible but are incorrect. For example look at the image below, ChatGPT interprets 9.11 and 9.9 as text, not numbers. This causes it to predict what typically follows based on its training. On the other hand, a human applies simple logic instead and easily identifies that 9.9 is bigger than 9.11.</p>
 <p>To limit the effect of this, specific tools have been introduced like creating a python code to run calculations, increasing the mathematical accuracy. Even with these improvements, it’s important to be aware that generative AI still struggles with math problems. This is particularly the case with math problems that it hasn’t yet been trained on.</p>
-<hr class="docutils" />
 <p><img alt="Generative AI Struggles with Math" src="_images/Image1_StrugglesMath.png" /></p>
-<hr class="docutils" />
-<p>To address this problem, newer models like GPT-o1, Gemini 2.0 Flash Thinking and DeepSeek R1 have incorporated techniques that break the problem down in steps (attempting to mimic human reasoning). This breaks the predictive problem into smaller stages which makes the final prediction more likely to track the right mathematic pattern. Besides this other AI tools such as Google Deepminds AlphaProof are specialised specifically on math hence excelling in this field.</p>
+<p>While LLMs struggle with math, specialized AI like DeepMind’s AlphaProof excels. Using reinforcement learning, AlphaProof solved International Mathematical Olympiad problems at a <a class="reference external" href="https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/">silver medal level</a>, scoring 28/42 which is on par with top human competitors. This shows AI can master math when designed for reasoning rather than pattern prediction.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Creativity</label><div class="sd-tab-content docutils">
 <p>Generative AI can enhance creativity when combined with human capabilities and critical oversight, but it faces significant limitations that highlight the need for collaboration. Firstly, AI lacks intent. Artists, researchers, and thinkers create with goals in mind, whether communicating an idea, solving a problem, or connecting to an experience in the real world. Their intent gives direction and meaning to the creative process, shaping which ideas are pursued, refined, or discarded. Thus, any perceived creativity comes from interaction with users who guide and refine its suggestions. Without human evaluation, AI cannot determine the value or relevance of its ideas. Worse yet, AI-generated ideas can anchor students, limiting their ability to think originally.</p>
-<p>Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential) for nuanced, innovative ideas. As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a <a class="reference external" href="https://arxiv.org/abs/2409.04109">study</a> found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.</p>
+<p>Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential grasping nuance). As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a <a class="reference external" href="https://arxiv.org/abs/2409.04109">study</a> found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.</p>
 <p>Creativity involves selection and connection. Humans excel at linking unrelated ideas and determining their worth, while AI, like a kaleidoscope, rearranges familiar patterns without judging their value.</p>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -455,13 +407,62 @@ Creativity</label><div class="sd-tab-content docutils">
 Reasoning</label><div class="sd-tab-content docutils">
 <p>LLMs struggle with reasoning because they predict words based on patterns rather than engaging in logical inference. They excel at working with text but lack structured reasoning abilities, such as relational reasoning. For example, when using sentences like “Alice is Bob’s mother”. The LLM becomes good at recognising these patterns, but it doesn’t really understand the meaning of “mother” or the relationships implied by that word. Thus, if you ask it a slightly more complex question like “If Bob has a sister named Carol, what is Alice’s relationship to Carol?”, the LLM might make a mistake. Instead of correctly answering “Alice is Carol’s mother”, it might say “Alice is Carol’s aunt” or even “Alice is Carol’s father”</p>
 <p>Furthermore, LLMs struggle with numerical reasoning, often misinterpreting basic questions and making bigger mistakes in complex math because they rely on pattern recognition instead of logical rules (refer to math tab). This issue extends to sequential decision-making, where LLMs fail to plan a series of steps while considering real-world consequences. Picture a chef who’s never learned the underlying principles of cooking. They can reproduce recipes by copying ingredient lists and instructions word for word, often creating impressive-looking dishes. But if they miss some ingredients they’ll struggle creating a good dish as they don’t grasp how flavors actually work together.</p>
-<p>LLMs don’t actually think, they predict text based on patterns. When given the river-crossing puzzle, they recall similar problems, often with extra rules (like a wolf that might eat the goat), so they assume complexity and generate an overcomplicated answer. A human, using basic logic, immediately sees the simplest solution: just take the goat across. The difference is that humans understand the actual problem, while LLMs just match patterns. Even if developers correct specific mistakes, LLMs will still make these errors because they don’t truly reason, they just guess based on past examples.</p>
-<hr class="docutils" />
-<p><img alt="Generative AI Struggles with Math" src="_images/Image1_StrugglesReasoning.png" /></p>
-<hr class="docutils" />
-<p>Research is divided on whether techniques like Chain-of-Thought (CoT) prompting improves LLM reasoning. Some <a class="reference external" href="https://arxiv.org/abs/2212.10001">studies</a> suggest it helps by structuring existing reasoning skills, while <a class="reference external" href="https://arxiv.org/abs/2401.09042">others</a> argue it does not teach new skills or fill knowledge gaps. Nevertheless taking the time to review step-by-step logic transforms these systems from black boxes into more understandable processes where mistakes can be caught early on.</p>
+<p>LLMs don’t actually think, they predict text based on patterns. When given the river-crossing puzzle, they recall similar problems, often with extra rules (like a wolf that might eat the goat), so they assume complexity and generate an overcomplicated answer. A human, using basic logic, immediately sees the simplest solution: just take the goat across. The difference is that humans understand the actual problem, while LLMs just match patterns. As seen in the image, the LLM incorrectly predicts the pattern, generating an inefficient solution where the man travels back and forth unnecessarily. Even if developers correct specific mistakes, LLMs will still make these errors because they don’t truly reason, they just guess based on past examples. However, many newer AI tools now incorporate more advanced reasoning models, which take longer to process but attempt to mimic human-like thinking.</p>
+<p><img alt="Generative AI Struggles with Reasoning" src="_images/Image1_StrugglesReasoning.png" /></p>
 </div>
 </div>
+</section>
+<section id="the-future-of-generative-ai">
+<h2>The future of generative AI<a class="headerlink" href="#the-future-of-generative-ai" title="Link to this heading">#</a></h2>
+<p>Generative AI is moving away from massive language models like GPT-4 toward specialized “reasoning models.” These newer models focus on logical, step-by-step thinking (often called “chain of thought”) and target tasks like math proofs, complex coding, and research. Companies such as OpenAI, Google, and xAI are making this shift because the returns on ever-larger LLMs (requiring tens of thousands of GPUs and costing hundreds of millions to train) are hitting a plateau. Reasoning models, by contrast, aim to achieve better accuracy with less computational overhead.</p>
+<p>An example is OpenAI’s “o1,” which shows major gains in math Olympiad accuracy compared to GPT-4o, though it can be pricier to use. Others, like DeepSeek-R1, are significantly cheaper, indicating ongoing exploration of cost-effective designs. This pivot is driven by the need for deeper problem-solving and more sustainable compute costs. As a result, the future of generative AI seems to lie in reasoning-centric systems rather than simply scaling up traditional LLMs.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>o1</p></th>
+<th class="head"><p>GPT-4o</p></th>
+<th class="head"><p>Human Experts</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Math Olympiad accuracy</strong></p></td>
+<td><p>83.3%</p></td>
+<td><p>13.4%</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>PhD-level questions accuracy</strong></p></td>
+<td><p>78%</p></td>
+<td><p>56.1%</p></td>
+<td><p>69.7%</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Codeforces percentile</strong></p></td>
+<td><p>89th</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>USA Math Olympiad ranking</strong></p></td>
+<td><p>Top 500 high school students</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This table, based on numbers from <a class="reference external" href="https://www.technologyreview.com/2024/09/17/1104004/why-openais-new-model-is-such-a-big-deal/">MIT Technology Review</a>, highlights the superior performance of reasoning models in specialized tasks, underscoring their potential for future AI development.</p>
 </section>
 </section>
 
@@ -531,6 +532,7 @@ Reasoning</label><div class="sd-tab-content docutils">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#things-generative-ai-struggles-with">Things generative AI struggles with</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-future-of-generative-ai">The future of generative AI</a></li>
 </ul>
   </nav></div>
 
@@ -555,7 +557,7 @@ By Marnix Jacobs
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

@@ -1,17 +1,19 @@
 # AI Tool Database
 
-AI is evolving rapidly, with new tools being released and updated constantly. Because of this, it’s hard to pinpoint a single “best” tool since the landscape is always changing. Instead, focus on your specific needs, whether it’s writing, brainstorming, or something else choose tools that align with those tasks. 
+AI is evolving rapidly, with new tools being released and updated constantly. Because of this, it’s hard to pinpoint a single “best” tool since the landscape is always changing. Instead, focus on your specific needs, whether it’s writing, brainstorming, or something else choose tools that align with those tasks. The real key isn’t which tool you use, but how well you use it. 
+
+Knowing how to ask the right questions and understanding what these models can and can’t do makes all the difference. Refer back to [LLMs Explained](llms_explained.md) to really understand how these systems work.
 
 ---
 
-## **My Go-To AI Tools**
-I rely on the following tools for **90%** of my tasks:
+## **My Favorite AI Tools**
+1. **Co-Pilot**: Microsoft integration
 
-1. **ChatGPT**: Powerful, versatile, and easy to use.
+2. **ChatGPT**: Versatile, user-friendly
 
-2. **Perplexity**: Great for finding relevant information on the internet. However, I’m increasingly using ChatGPT’s search feature for this as well.
+3. **Perplexity**: Internet-focused, referenced citations
 
-```{dropdown} **Video:** Explanation of Perplexity
+```{dropdown} **Optional Video:** Explanation of Perplexity
 
 <div style="text-align: center;">
     <iframe width="560" height="315" 
@@ -25,9 +27,9 @@ I rely on the following tools for **90%** of my tasks:
 ```
 
 
-3. **NotebookLM**: Minimal hallucinations, file-based knowledge, and unique features like free AI podcast generation. 
+4. **NotebookLM**: Minimal hallucinations, file-based knowledge, unique features like free AI podcast generation. 
 
-```{dropdown} **Video:** Explanation of NotebookLM
+```{dropdown} **Optional Video:** Explanation of NotebookLM
 
 <div style="text-align: center;">
     <iframe width="560" height="315" 
@@ -39,11 +41,12 @@ I rely on the following tools for **90%** of my tasks:
     </iframe>
 </div>
 ```
+
+5. **Grok**: Emerging model, advanced reasoning
+
 ```{admonition} Personal Note
 :class: note
-I pay for ChatGPT Pro, but there are plenty of great free options out there too. The real key isn’t which tool you use, but how well you use it. 
-
-Knowing how to ask the right questions and understanding what these models can and can’t do makes all the difference. Refer back to [LLMs Explained](llms_explained.md) to really understand how these systems work.
+You can always reference the [TU Delft software finder](https://softwarefinder.tudelft.nl) to see what is and isn't permitted to use. Furthermore, if you're looking to explore various open source AI tools from a single user-friendly platform check out [Together AI's playground](https://api.together.ai/playground/chat/deepseek-ai/DeepSeek-R1#).
 ```
 ---
 
