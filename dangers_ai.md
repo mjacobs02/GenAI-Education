@@ -129,7 +129,7 @@ Large language models are trained on vast amounts of text collected from books, 
 ```{tab-item} Algorithmic Bias
 Even if the training data were perfectly balanced (which is virtually impossible), the way AI processes information can introduce further bias. The model assigns weight to different words and concepts based on statistical patterns, but it does not understand fairness or ethical considerations. Certain ideas may be overemphasized, and others may be filtered out in ways that unintentionally reinforce stereotypes. Additionally, design choices such as how a model prioritizes diversity over accuracy can skew outputs in unintended ways. For example, in an effort to promote diversity, Google's AI image generator produced [historically inaccurate images](https://blog.google/products/gemini/gemini-image-generation-issue/), such as depicting racially diverse Nazi soldiers and reimagining the Founding Fathers with varied ethnicities. These outputs led to public backlash, highlighting how design decisions intended to enhance inclusivity can inadvertently introduce new forms of bias and misrepresentation.
 ```
-```{tab-item} Human Bias
+```{tab-item} Reinforcement Through Human Feedback
 Many AI models undergo fine-tuning through reinforcement learning, where human reviewers help shape responses by ranking preferred outputs. If these reviewers have unconscious biases, they may inadvertently guide the model toward responses that align with their own perspectives. Moreover, real-world user interactions can reinforce biases. For example, if users mostly interact with content that leans in one direction or has specific characteristics, the model might begin to favor these patterns over others. This happens because the AI learns from past interactions, so if certain topics or types of content are clicked on more, it "learns" that these responses are preferred, making it more likely to produce similar outputs in the future.
 ```
 ````
@@ -164,7 +164,7 @@ Teaching AI literacy is essential for helping students recognize and challenge b
 
 ```{admonition} Image Bias Explorer
 :class: seealso dropdown
-Explore how text-to-image models represent different professions [here](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer) and see the biases these may contain.
+Explore how text-to-image models represent different professions [here](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer) and see the biases these may contain. Remember to be conscious of your AI usage when engaging with these tools.
 ```
 
 ---
