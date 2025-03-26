@@ -26,7 +26,7 @@ The summary above was created using generative AI through NotebookLM. This audio
 There are many dangers of AI and sometimes its hard to keep oversight and really understand where to focus on. This page intends to walk you through some of the main challenges of AI and important things to consider.
 
 ## Danger 1: Environmental Impact
-The environmental impact of AI is significant. [Research from 2019](https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243) shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI [it is projected](https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3) that by 2027 AI could consume the energy equivalent of a country like the Netherlands.
+The environmental impact of AI is significant. <a href="https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243" target="_blank" rel="noopener noreferrer">Research from 2019</a> shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI <a href="https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3" target="_blank" rel="noopener noreferrer">It is projected</a> that by 2027 AI could consume the energy equivalent of a country like the Netherlands.
 
 ```{image} ./Images/ImageCO2LLM.png
 :alt: CO2 LLM
@@ -34,7 +34,7 @@ The environmental impact of AI is significant. [Research from 2019](https://web.
 :align: center
 ```
 
-To better understand AI’s true impact, we need to examine three key stages: training, deployment (inference), and retraining/updates. While the training phase is initially very energy-intensive, the ongoing use during the deployment and inference phase can surpass the environmental impact of training due to its continuous operation. For example, [Google reported](https://arxiv.org/pdf/2311.16863) that 60% of its AI-related electricity comes from running models, while only 40% is from training. Recognizing the impact of each stage allows for a clearer picture of AI’s long-term energy demands and environmental consequences.
+To better understand AI’s true impact, we need to examine three key stages: training, deployment (inference), and retraining/updates. While the training phase is initially very energy-intensive, the ongoing use during the deployment and inference phase can surpass the environmental impact of training due to its continuous operation. For example, <a href="https://arxiv.org/pdf/2311.16863" target="_blank" rel="noopener noreferrer">Google reported</a> that 60% of its AI-related electricity comes from running models, while only 40% is from training. Recognizing the impact of each stage allows for a clearer picture of AI’s long-term energy demands and environmental consequences.
 
 ````{tab-set}
 ```{tab-item} Stage 1: Training
@@ -80,7 +80,7 @@ Here are some ways you can reduce your impact without giving up AI completely:
 
 - Share AI-Generated Materials – If you’ve used AI to create lesson plans, quizzes, or summaries, share them with colleagues. This avoids multiple teachers running the same energy-heavy AI processes for identical tasks.
 - Teach About AI’s Energy Use – Include discussions in class about the environmental cost of AI. This builds awareness among students and encourages responsible usage.
-- Use Simpler Alternatives – Not every task needs a massive LLM. For basic text generation or summarization, use smaller, less energy-intensive models instead of high-powered ones. For example you can use the following [open source ranking](https://huggingface.co/spaces/AIEnergyScore/Leaderboard) which compares LLMs on energy effiency. However, obtaining information about non-open-source models remains difficult.
+- Use Simpler Alternatives – Not every task needs a massive LLM. For basic text generation or summarization, use smaller, less energy-intensive models instead of high-powered ones. For example you can use the following <a href="https://huggingface.co/spaces/AIEnergyScore/Leaderboard" target="_blank" rel="noopener noreferrer">open source ranking</a> which compares LLMs on energy effiency. However, obtaining information about non-open-source models remains difficult.
 
 Ultimately, AI is a tool, not a requirement. How much you use it, and how efficiently, is a decision only you can make. The goal isn’t to eliminate AI but to use it thoughtfully, with full awareness of both its benefits and its costs.
 ```
@@ -94,7 +94,7 @@ Because of this, AI’s true energy impact remains unclear. Until companies are 
 ---
 
 ## Danger 2: Copyright Infringement
-LLMs are trained on vast amounts of publicly available text, much of which is copyrighted material. AI does not memorize and reproduce exact passages verbatim ([except in rare cases](https://www.reuters.com/legal/murdoch-firms-dow-jones-new-york-post-sue-perplexity-ai-2024-10-21/)), but it does extract patterns, styles, and ideas from its training data. This creates a gray area in copyright law as direct copying is illegal, learning from copyrighted material to generate new content has historically been allowed in areas like human learning and artistic inspiration. However, AI operates on a scale that challenges existing legal frameworks.
+LLMs are trained on vast amounts of publicly available text, much of which is copyrighted material. AI does not memorize and reproduce exact passages verbatim (<a href="https://www.reuters.com/legal/murdoch-firms-dow-jones-new-york-post-sue-perplexity-ai-2024-10-21/" target="_blank" rel="noopener noreferrer">except in rare cases</a>), but it does extract patterns, styles, and ideas from its training data. This creates a gray area in copyright law as direct copying is illegal, learning from copyrighted material to generate new content has historically been allowed in areas like human learning and artistic inspiration. However, AI operates on a scale that challenges existing legal frameworks.
 
 Companies developing AI argue that training on copyrighted text falls under "fair use," a legal doctrine allowing limited use of protected content for purposes like education, research, and transformative work. Critics, including authors, journalists, and publishers, counter that AI models benefit commercially from their work without permission or compensation. Lawsuits have been filed by artists, writers, and organizations claiming that AI-generated outputs derived from their copyrighted content constitute unauthorized reproduction.
 
@@ -110,12 +110,12 @@ Who Owns the Work?
 
 What Counts as Human Input?
 - Just typing a short prompt isn’t enough to claim copyright.
-- Under [EU law](https://intellectual-property-helpdesk.ec.europa.eu/news-events/news/artificial-intelligence-and-copyright-use-generative-ai-tools-develop-new-content-2024-07-16-0_en) the making of edits, refining outputs, and adding creative choices that reflect human expression could qualify the work for copyright. Keep in mind that copyright law is, to a large extent, a matter of national law, so specifics might differ between countries within the EU.
+- Under <a href="https://intellectual-property-helpdesk.ec.europa.eu/news-events/news/artificial-intelligence-and-copyright-use-generative-ai-tools-develop-new-content-2024-07-16-0_en" target="_blank" rel="noopener noreferrer">EU law</a>, the making of edits, refining outputs, and adding creative choices that reflect human expression could qualify the work for copyright. Keep in mind that copyright law is, to a large extent, a matter of national law, so specifics might differ between countries within the EU.
 ```
 
 ```{admonition} TU Delfts policy on copyright
 :class: seealso dropdown
-Check out the [TU Delft Copyrighting Support Page](https://www.tudelft.nl/en/library/support/copyright) for more information.
+Check out the <a href="https://www.tudelft.nl/en/library/support/copyright" target="_blank" rel="noopener noreferrer">TU Delft Copyrighting Support Page</a> for more information.
 ```
 ---
 
@@ -127,7 +127,7 @@ AI tools are powerful, but they can also reflect or amplify unfair patterns from
 Large language models are trained on vast amounts of text collected from books, articles, websites, and social media. These sources contain existing societal biases about race, gender, culture, and more because they are written by humans with their own perspectives and prejudices. If certain viewpoints dominate the dataset while others are underrepresented, the model learns and perpetuates those imbalances. For example, if historical texts portray leadership as predominantly male, the model may generate biased assumptions about gender roles.
 ```
 ```{tab-item} Algorithmic Bias
-Even if the training data were perfectly balanced (which is virtually impossible), the way AI processes information can introduce further bias. The model assigns weight to different words and concepts based on statistical patterns, but it does not understand fairness or ethical considerations. Certain ideas may be overemphasized, and others may be filtered out in ways that unintentionally reinforce stereotypes. Additionally, design choices such as how a model prioritizes diversity over accuracy can skew outputs in unintended ways. For example, in an effort to promote diversity, Google's AI image generator produced [historically inaccurate images](https://blog.google/products/gemini/gemini-image-generation-issue/), such as depicting racially diverse Nazi soldiers and reimagining the Founding Fathers with varied ethnicities. These outputs led to public backlash, highlighting how design decisions intended to enhance inclusivity can inadvertently introduce new forms of bias and misrepresentation.
+Even if the training data were perfectly balanced (which is virtually impossible), the way AI processes information can introduce further bias. The model assigns weight to different words and concepts based on statistical patterns, but it does not understand fairness or ethical considerations. Certain ideas may be overemphasized, and others may be filtered out in ways that unintentionally reinforce stereotypes. Additionally, design choices such as how a model prioritizes diversity over accuracy can skew outputs in unintended ways. For example, in an effort to promote diversity, Google's AI image generator produced <a href="https://blog.google/products/gemini/gemini-image-generation-issue/" target="_blank" rel="noopener noreferrer">historically inaccurate images</a>, such as depicting racially diverse Nazi soldiers and reimagining the Founding Fathers with varied ethnicities. These outputs led to public backlash, highlighting how design decisions intended to enhance inclusivity can inadvertently introduce new forms of bias and misrepresentation.
 ```
 ```{tab-item} Reinforcement Through Human Feedback
 Many AI models undergo fine-tuning through reinforcement learning, where human reviewers help shape responses by ranking preferred outputs. If these reviewers have unconscious biases, they may inadvertently guide the model toward responses that align with their own perspectives. Moreover, real-world user interactions can reinforce biases. For example, if users mostly interact with content that leans in one direction or has specific characteristics, the model might begin to favor these patterns over others. This happens because the AI learns from past interactions, so if certain topics or types of content are clicked on more, it "learns" that these responses are preferred, making it more likely to produce similar outputs in the future.
@@ -164,7 +164,7 @@ Teaching AI literacy is essential for helping students recognize and challenge b
 
 ```{admonition} Image Bias Explorer
 :class: seealso dropdown
-Explore how text-to-image models represent different professions [here](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer) and see the biases these may contain. Remember to be conscious of your AI usage when engaging with these tools.
+Explore how text-to-image models represent different professions <a href="https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer" target="_blank" rel="noopener noreferrer">here</a> and see the biases these may contain. Remember to be conscious of your AI usage when engaging with these tools.
 ```
 
 ---

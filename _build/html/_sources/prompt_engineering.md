@@ -16,8 +16,8 @@ This section is all about prompting, a fundamental skill for using AI effectivel
 1. **Define the Task Clearly**: State what you want the AI to do. Examples: "Generate potential research questions related to...", "Summarize key findings from these research papers...", "Create a syllabus outline for a course on...".
 2. **Provide Context**: Provide background information. Who is the target audience (students, fellow researchers)? What are the learning objectives? Example: "Create a syllabus outline for a first-year bachelor course on sustainable engineering, focusing on circular economy principles."
 3. **Supply exemplars**: Give examples of the desired output. This drastically improves quality. Example: If asking for research questions, provide examples of well-formulated research questions in the relevant field. If asking for a syllabus, provide an example syllabus or a link to one.
-4. **Assign a Persona**: Tell ChatGPT who it should be "acting" as. Example: "Act as a leading expert in blockchain..." or "Act as an experienced TU Delft professor designing a new course...". This adds context implicitly. Instead of explicitly stating "professors value conciseness, passion for the subject, and use simple language," you simply say "act as a university professor," and the LLM draws on its training data to infer these characteristics.
-5. **Specify the Format**: Tell ChatGPT how you want the output formatted. Examples: "Use bullet points," "Create a table," "Write a concise abstract," "Format as a LaTeX document."
+4. **Assign a Persona**: Tell the LLM who it should be "acting" as. Example: "Act as a leading expert in blockchain..." or "Act as an experienced TU Delft professor designing a new course...". This adds context implicitly. Instead of explicitly stating "professors value conciseness, passion for the subject, and use simple language," you simply say "act as a university professor," and the LLM draws on its training data to infer these characteristics.
+5. **Specify the Format**: Tell the LLM how you want the output formatted. Examples: "Use bullet points," "Create a table," "Write a concise abstract," "Format as a LaTeX document."
 6. **Set the Tone**: Define the desired tone of voice. Examples: "Use a formal, academic tone," "Use an engaging and accessible tone for undergraduate students," "Use a concise and technical tone suitable for a scientific publication."
 
 ---
@@ -51,9 +51,9 @@ However if using this alternative is not possible her are some strategies to ach
 
 Advanced prompting methods, such as chain-of-thought prompting and megaprompts, enhance AI accuracy and response structure. 
 
-1. **Chain-of-thought prompting** guides the AI to reason step-by-step, improving logical clarity and consistency. Learn more about this method [here](https://www.promptingguide.ai/techniques/cot).
+1. **Chain-of-thought prompting** guides the AI to reason step-by-step, improving logical clarity and consistency. Learn more about this method <a href="https://www.promptingguide.ai/techniques/cot" target="_blank" rel="noopener noreferrer">here</a>.
 
-2. **Megaprompts**, on the other hand, provide detailed and comprehensive instructions to minimize ambiguity and align outputs with specific needs. Explore megaprompts in detail [here](https://medium.com/messy-problems-original-concepts/mega-prompts-turning-expertise-into-code-4e19f3ea9a58).
+2. **Megaprompts**, on the other hand, provide detailed and comprehensive instructions to minimize ambiguity and align outputs with specific needs. Explore megaprompts in detail <a href="https://medium.com/messy-problems-original-concepts/mega-prompts-turning-expertise-into-code-4e19f3ea9a58" target="_blank" rel="noopener noreferrer">here</a>.
 
-For a broader overview of advanced prompting techniques, visit [Prompt Engineering Guide](https://www.promptingguide.ai/techniques).
+For a broader overview of advanced prompting techniques, visit <a href="https://www.promptingguide.ai/techniques" target="_blank" rel="noopener noreferrer">Prompt Engineering Guide</a>.
 ```

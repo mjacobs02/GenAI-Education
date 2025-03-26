@@ -19,20 +19,20 @@ To make this work, Natanagara suggests building lessons around activities. For e
 </div>
 ```
 
-Some believe that AI is confined to certain fields and cannot be used in engineering. [Research](https://www.nature.com/articles/s41598-024-54936-7) by the TU Delft shows it has applications in every domain. While ChatGPT currently performs best with basic bachelor-level questions, that’s just the beginning. Its rapid progress suggests it won’t be long before it can handle more complex problems, making it a tool engineers can’t afford to ignore. Preventing students from working with AI now only sets them back later when these skills are expected in their careers.
+Some believe that AI is confined to certain fields and cannot be used in engineering. <a href="https://www.nature.com/articles/s41598-024-54936-7" target="_blank" rel="noopener noreferrer">Research</a> by TU Delft shows it has applications in every domain. While LLMs currently performs best with basic bachelor-level questions, that’s just the beginning. Its rapid progress suggests it won’t be long before it can handle more complex problems, making it a tool engineers can’t afford to ignore. Preventing students from working with AI now only sets them back later when these skills are expected in their careers.
 
 ```{admonition} How a university like Yale is incorportating AI in teaching
 :class: seealso dropdown
-- Professors at [Yale](https://poorvucenter.yale.edu/ai-teaching-examples-2) are incorporating AI in the following ways.
-    - Students in Edward Cooke’s course used ChatGPT to generate labels for objects in the Yale University Art Gallery, then analyzed and critiqued both the AI’s output and the effectiveness of their own prompts.
-    - Alexander Gil Fuentes' graduate students had the choice to let ChatGPT produce the first draft of their final paper, which they would refine before submitting both the AI-generated and edited versions.
-    - Sociology students in Justin Farrell’s course used ChatGPT to explore their research topics, then annotated its responses to identify inaccuracies, ethical concerns, and ways the AI shaped their perspective.
+- Professors at <a href="https://poorvucenter.yale.edu/ai-teaching-examples-2" target="_blank" rel="noopener noreferrer">Yale</a> are incorporating AI in the following ways.
+    - Students in Edward Cooke’s course used LLMs to generate labels for objects in the Yale University Art Gallery, then analyzed and critiqued both the AI’s output and the effectiveness of their own prompts.
+    - Alexander Gil Fuentes' graduate students had the choice to let LLMs produce the first draft of their final paper, which they would refine before submitting both the AI-generated and edited versions.
+    - Sociology students in Justin Farrell’s course used LLMs to explore their research topics, then annotated its responses to identify inaccuracies, ethical concerns, and ways the AI shaped their perspective.
 
 ```
 
 ## Where do we draw the line
 
-[Research](https://www.mdpi.com/2227-9709/10/4/87) shows that detecting AI-generated content is extremely difficult, and that’s not likely to change anytime soon. AI detectors are unreliable, especially as LLMs improve and students use AI alongside their work. The bigger issue is false positives. Students who haven’t used AI can still get flagged, leading to unfair consequences. Since AI use is already widespread, the question is: How should teachers respond? As Erik Winerö highlights educators are on a tightrope, balancing the potential benefits of AI against the risks of misuse.
+<a href="https://www.mdpi.com/2227-9709/10/4/87" target="_blank" rel="noopener noreferrer">Research</a> shows that detecting AI-generated content is extremely difficult, and that’s not likely to change anytime soon. AI detectors are unreliable, especially as LLMs improve and students use AI alongside their work. The bigger issue is false positives. Students who haven’t used AI can still get flagged, leading to unfair consequences. Since AI use is already widespread, the question is: How should teachers respond? As Erik Winerö highlights educators are on a tightrope, balancing the potential benefits of AI against the risks of misuse.
 
 ```{dropdown} **Optional Video:** Winerö, Cheating or Learning?
 
@@ -47,6 +47,7 @@ Some believe that AI is confined to certain fields and cannot be used in enginee
 </div>
 ```
 
-Firstly, it’s important to decide where you draw the line. [Harvard’s AI policy](https://www.huit.harvard.edu/ai/guidelines) offers a good starting point for thinking this through, and TU Delft is currently developing its own university-wide guidelines for AI use in education. These provide a helpful framework for regulating AI in a fair way, but this approach is mostly reactive. It focuses on limiting AI rather than adapting to it.
+Firstly, it’s important to decide where you draw the line. <a href="https://www.huit.harvard.edu/ai/guidelines" target="_blank" rel="noopener noreferrer">Harvard’s AI policy</a> offers a good starting point
+ for thinking this through, and TU Delft is currently developing its own university-wide guidelines for AI use in education. These provide a helpful framework for regulating AI in a fair way, but this approach is mostly reactive. It focuses on limiting AI rather than adapting to it.
 
 A more effective strategy is to rethink how assignments are designed. The goal isn’t to ban AI but to make tasks that are harder for AI to replicate. Small changes can go a long way. For example, instead of assigning a generic essay on a broad topic, ask students to reflect on their own experiences. AI struggles with context and can’t replicate personal insights or critical thinking. The more familiar you become with these tools, the more intentional you can be in how you use AI to improve learning and keep students motivated.

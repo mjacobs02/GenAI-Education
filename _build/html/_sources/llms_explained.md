@@ -21,7 +21,7 @@ This section provides a simple visualization of how LLMs work. I recommend start
 
 ```{admonition} Want to go deeper?
 :class: seealso dropdown
-Explore an in-depth, multi-episode series by 3Blue1Brown: [Neural Networks by 3Blue1Brown](https://www.3blue1brown.com/topics/neural-networks)
+Explore an in-depth, multi-episode series by 3Blue1Brown: <a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" rel="noopener noreferrer">Neural Networks by 3Blue1Brown</a>.
 ```
 
 ---
@@ -37,19 +37,19 @@ You can use this information to make more AI-proof assignments. For instance, th
 ```{tab-item} Math
 Generative AI struggles with math because large language models are trained on a vast amount of text data, which helps them predict the next word based on patterns in the data.
 
-Although very effective for linguistic tasks, math needs clear logic and reasoning. As a result, AI may produce answers that sound plausible but are incorrect. For example look at the image below, ChatGPT interprets 9.11 and 9.9 as text, not numbers. This causes it to predict what typically follows based on its training. On the other hand, a human applies simple logic instead and easily identifies that 9.9 is bigger than 9.11. 
+Although very effective for linguistic tasks, math needs clear logic and reasoning. As a result, AI may produce answers that sound plausible but are incorrect. For example look at the image below, the LLM interprets 9.11 and 9.9 as text, not numbers. This causes it to predict what typically follows based on its training. On the other hand, a human applies simple logic instead and easily identifies that 9.9 is bigger than 9.11. 
 
 To limit the effect of this, specific tools have been introduced like creating a python code to run calculations, increasing the mathematical accuracy. Even with these improvements, it’s important to be aware that generative AI still struggles with math problems. This is particularly the case with math problems that it hasn't yet been trained on.
 
 ![Generative AI Struggles with Math](./Images/Image1_StrugglesMath.png)
 
-While LLMs struggle with math, specialized AI like DeepMind’s AlphaProof excels. Using reinforcement learning, AlphaProof solved International Mathematical Olympiad problems at a [silver medal level](https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/), scoring 28/42 which is on par with top human competitors. This shows AI can master math when designed for reasoning rather than pattern prediction.
+While LLMs struggle with math, specialized AI like DeepMind’s AlphaProof excels. Using reinforcement learning, AlphaProof solved International Mathematical Olympiad problems at a <a href="https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/" target="_blank" rel="noopener noreferrer">silver medal level</a>, scoring 28/42 which is on par with top human competitors. This shows AI can master math when designed for reasoning rather than pattern prediction.
 ```
 
 ```{tab-item} Creativity
 Generative AI can enhance creativity when combined with human capabilities and critical oversight, but it faces significant limitations that highlight the need for collaboration. Firstly, AI lacks intent. Artists, researchers, and thinkers create with goals in mind, whether communicating an idea, solving a problem, or connecting to an experience in the real world. Their intent gives direction and meaning to the creative process, shaping which ideas are pursued, refined, or discarded. Thus, any perceived creativity comes from interaction with users who guide and refine its suggestions. Without human evaluation, AI cannot determine the value or relevance of its ideas. Worse yet, AI-generated ideas can anchor students, limiting their ability to think originally.
 
-Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential grasping nuance). As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a [study](https://arxiv.org/abs/2409.04109) found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.
+Another limitation lies in AI’s inability to apply tacit knowledge (experience-based understanding essential grasping nuance). As a result, AI outputs are often unoriginal, reflecting patterns in their training data and leading to comparable ideas. Scaling AI does not solve this. For example, a <a href="https://arxiv.org/abs/2409.04109" target="_blank" rel="noopener noreferrer">study</a> found that out of 4,000 AI-generated ideas, only about 200 were original. This shows that AI can produce a lot, but it often repeats itself, so human guidance is necessary.
 
 Creativity involves selection and connection. Humans excel at linking unrelated ideas and determining their worth, while AI, like a kaleidoscope, rearranges familiar patterns without judging their value. 
 ```
@@ -97,4 +97,4 @@ An example is OpenAI’s “o1,” which shows major gains in math Olympiad accu
   - -
   ```
 
-This table, based on numbers from [MIT Technology Review](https://www.technologyreview.com/2024/09/17/1104004/why-openais-new-model-is-such-a-big-deal/), highlights the superior performance of reasoning models in specialized tasks, underscoring their potential for future AI development.
+This table, based on numbers from <a href="https://www.technologyreview.com/2024/09/17/1104004/why-openais-new-model-is-such-a-big-deal/" target="_blank" rel="noopener noreferrer">MIT Technology Review</a>, highlights the superior performance of reasoning models in specialized tasks, underscoring their potential for future AI development.

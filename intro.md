@@ -1,8 +1,8 @@
 # Welcome
 
-Hi, I’m [Marnix Jacobs](https://www.linkedin.com/in/marnix-jacobs-b35a06255), a student at TU Delft. This interactive notebook, created in collaboration with the Technology Policy and Management faculty, explores integrating generative AI in education. This guide combines theory, practical applications, and useful resources, guiding you towards understanding and leveraging AI. Free and open to the public, this book aims to empower teachers with the knowledge to enhance their workflows and unlock the potential of AI in the classroom.
+Hi, I’m <a href="https://www.linkedin.com/in/marnix-jacobs-b35a06255" target="_blank" rel="noopener noreferrer">Marnix Jacobs</a>, a student at TU Delft. This interactive notebook, created in collaboration with the Technology Policy and Management faculty, explores integrating generative AI in education. This guide combines theory, practical applications, and useful resources, guiding you towards understanding and leveraging AI. Free and open to the public, this book aims to empower teachers with the knowledge to enhance their workflows and unlock the potential of AI in the classroom.
 
-If you’d like updates on new content added, please subscribe via the [form](https://forms.gle/sXVorzJAY49utoRs8). Furthermore, this book is a work in progress, and I appreciate your input to make it better. If you have any feedback please feel free to email me (m.a.a.jacobs@student.tudelft.nl)
+If you’d like updates on new content added, Please subscribe via this <a href="https://forms.gle/sXVorzJAY49utoRs8" target="_blank" rel="noopener noreferrer">form</a>. Furthermore, this book is a work in progress, and I appreciate your input to make it better. If you have any feedback please feel free to email me (m.a.a.jacobs@student.tudelft.nl)
 
 If this book has been useful to you, I have just one request: **please share it**. Whether it’s with colleagues, on social media, or in your professional circles. The more it reaches educators, the greater its potential to create meaningful change. Thank you, and enjoy reading!
 

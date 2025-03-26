@@ -7,7 +7,7 @@ Knowing how to ask the right questions and understanding what these models can a
 ---
 
 ## **My Favorite AI Tools**
-1. **Co-Pilot**: Microsoft integration
+1. **Co-Pilot**: Microsoft integration, suggested tool by the TU Delft
 
 2. **ChatGPT**: Versatile, user-friendly
 
@@ -46,7 +46,7 @@ Knowing how to ask the right questions and understanding what these models can a
 
 ```{admonition} Personal Note
 :class: note
-You can always reference the [TU Delft software finder](https://softwarefinder.tudelft.nl) to see what is and isn't permitted to use. Furthermore, if you're looking to explore various open source AI tools from a single user-friendly platform check out [Together AI's playground](https://api.together.ai/playground/chat/deepseek-ai/DeepSeek-R1#).
+You can always reference the <a href="https://softwarefinder.tudelft.nl" target="_blank" rel="noopener noreferrer">TU Delft software finder</a> to see what is and isn't permitted to use. Furthermore, if you're looking to explore various open source AI tools from a single user-friendly platform on the <a href="https://api.together.ai/playground/chat/deepseek-ai/DeepSeek-R1#" target="_blank" rel="noopener noreferrer">Together AI Playground</a>.
 ```
 ---
 
@@ -57,17 +57,17 @@ Generative AI tools are frequently updated, so it’s good to stay informed. Bel
 
 ```{admonition} Gen AI Ranked Tier List
   :class: seealso
-Explore Gen AI Rankings by *AI Advatange* for an up to date tier list of AI tools [Gen AI Rankings](https://community.myaiadvantage.com/c/ai-app-ranking/).
+Explore Gen AI Rankings by *AI Advantage* with an up-to-date tier list of tools on the <a href="https://community.myaiadvantage.com/c/ai-app-ranking/" target="_blank" rel="noopener noreferrer">Gen AI Rankings site</a>.
 ```
 
 ```{admonition} Stay Updated on AI Developments with a Newsletter
 :class: seealso
 
-Subscribe to this newsletter to receive the latest AI news every workday [The Rundown AI Newsletter](https://www.therundown.ai/subscribe?ref=Bespx8xsHp).
+Subscribe to this newsletter to receive the latest AI news every workday: <a href="https://www.therundown.ai/subscribe?ref=Bespx8xsHp" target="_blank" rel="noopener noreferrer">The Rundown AI Newsletter</a>.
 ```
 
 ```{admonition} AI Index Report
 :class: seealso
 
-Check out the [Stanford 2024 AI Index Report](https://aiindex.stanford.edu/report/) for key trends in AI, from tech advancements to public opinions and global impact. 
+Check out the <a href="https://aiindex.stanford.edu/report/" target="_blank" rel="noopener noreferrer">Stanford 2024 AI Index Report</a> for key trends in AI — from tech advancements to public opinions and global impact.
 ```
