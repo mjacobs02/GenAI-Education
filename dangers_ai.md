@@ -26,7 +26,7 @@ The summary above was created using generative AI through NotebookLM. This audio
 There are many dangers of AI and sometimes its hard to keep oversight and really understand where to focus on. This page intends to walk you through some of the main challenges of AI and important things to consider.
 
 ## Danger 1: Environmental Impact
-The environmental impact of AI is significant. <a href="https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243" target="_blank" rel="noopener noreferrer">Research from 2019</a> shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI <a href="https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3" target="_blank" rel="noopener noreferrer">It is projected</a> that by 2027 AI could consume the energy equivalent of a country like the Netherlands.
+The environmental impact of AI is significant. <a href="https://web.archive.org/web/20240416050226/https://arxiv.org/abs/1906.02243" target="_blank" rel="noopener noreferrer">Research from 2019</a> shows that training a single AI model can generate 626,000 lbs (284 metric tons) of CO2. The same as the lifetime emissions of five cars. Furthermore, given the rapid adoption and integration of AI. <a href="https://www.cell.com/joule/fulltext/S2542-4351(23)00365-3" target="_blank" rel="noopener noreferrer">It is projected</a> that by 2027 AI could consume the energy equivalent of a country like the Netherlands.
 
 ```{image} ./Images/ImageCO2LLM.png
 :alt: CO2 LLM
