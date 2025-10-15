@@ -1,28 +1,43 @@
 format: jb-book
-root: intro
+root: welcome
 
-chapters:
-  - file: module1_intro
-    title: "1. Introduction"
-    sections:
-      - file: gen_ai_education
-        title: "Gen AI in Education"
-      - file: llms_explained
-        title: "LLMs Explained"
-      - file: dangers_ai
-        title: "Dangers of AI"
-      - file: prompt_engineering
-        title: "Prompt Engineering"
-      - file: ai_tool_database
-        title: "AI Tools Database"
-  - file: lesson_planning
-    title: "2. Lesson Planning"
-    sections:
-      - file: lesson_level1
-        title: "Level 1: Beginner"
-      - file: lesson_level2
-        title: "Level 2: Intermediate"
-      - file: lesson_level3
-        title: "Level 3: Expert"
-  - file: Outro
-    title: "3. Thank You"
+parts:
+  - caption: "Introduction"
+    chapters:
+      - file: module1_intro
+        title: "Introduction"
+        sections:
+          - file: custom_gpt
+            title: "The Books AI Companion"
+          - file: using_genai
+            title: "How to Use GenAI"
+          - file: dangers_ai
+            title: "Dangers"
+
+  - caption: "Transforming Teaching"
+    chapters:
+      - file: lesson_planning
+        title: "Lesson Planning"
+        sections:
+          - file: lesson_level1
+            title: "Level 1: Beginner Prompts"
+          - file: lesson_level2
+            title: "Level 2: Intermediate Prompts"
+          - file: lesson_level3
+            title: "Level 3: Advanced Workflows"
+      - file: ai_proofing_assignments
+        title: "AI–Proofing Assignments"
+
+  - caption: "The Future"
+    chapters:
+      - file: future_edu_main
+        title: "The Future in Education"
+        sections:
+          - file: future_group_projects
+            title: "Using AI in Group Projects"
+          - file: future_grading
+            title: "Using AI to Grade Assignments"
+          - file: future_academic_research
+            title: "Using AI in Academic Research"
+      - file: Outro
+        title: "Thank You"

@@ -27,13 +27,25 @@ repository:
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  use_issues_button: false
-  use_repository_button: false
 
 sphinx:
+  extra_extensions:
+    - sphinx_design
   config:
-    nb_execution_show_tb: True
+    nb_execution_show_tb: true
+    html_static_path: ["_static"]
+    html_js_files:
+      - newtab-chatgpt.js
+    html_theme_options:
+      sphinx:
+      home_page_in_toc: true
+      use_download_button: false
+      use_fullscreen_button: false
+      use_repository_button: false
+      use_issues_button: false
+      use_source_button: false
+      launch_buttons: {}        # hides the info/help dropdown
+      theme_switcher: false     # hides dark/light mode toggle (if your theme supports this key)
 
 parse:
   myst_enable_extensions:
@@ -47,6 +59,10 @@ parse:
     - html
 
 html:
+  use_issues_button: false
+  use_repository_button: false
   sanitize_html: false
+  css_files:
+    - _static/wrap.css
 
 copyright: 2025

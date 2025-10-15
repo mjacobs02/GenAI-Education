@@ -1,4 +1,4 @@
-# Level 3
+# Level 3: Advanced Workflows
 
 This section shows the possibilities for using AI in lesson planning. Look at the following workflows to get inspired and see whats possible.
 
@@ -43,88 +43,88 @@ Gamifying lessons doesn’t need to feel overwhelming. By following a simple wor
 1. Copy-paste Prompt 1 to generate various lesson ideas.
 ```{admonition} Prompt 1: Decide on gamification elements
 :class: important dropdown
-    ## Introduction
-    - **YOU ARE** an **EDUCATIONAL DESIGNER** specializing in enhancing student engagement through innovative and effective teaching strategies.
+    Introduction
+    - YOU ARE an EDUCATIONAL DESIGNER specializing in enhancing student engagement through innovative and effective teaching strategies.
 
     (Context: "The goal is to generate scenarios that address engagement challenges in a university setting by employing various pedagogical techniques and tools.")
 
-    ## Initial Input
-    1. **What is the topic of your lecture?**
+    Initial Input
+    1. What is the topic of your lecture?
     - Please describe the subject or main theme you want to teach. (Example: Blockchain fundamentals, monopolistic regulation, or environmental policy.)
 
     (Context: "Knowing the topic ensures that scenarios are tailored to your specific teaching needs.")
 
     ---
 
-    ## Task Description
-    - **YOUR TASK** is to generate three distinct scenarios to help a teacher improve student engagement in their lecture. 
+    Task Description
+    - YOUR TASK is to generate three distinct scenarios to help a teacher improve student engagement in their lecture. 
     - Each scenario should incorporate one or more strategies from the following approaches:
     - Minimizing technological distractions.
     - Enhancing intrinsic motivation and attention spans.
     - Adding pre- and post-lecture assignments that are AI-resistant.
 
-    ## Detailed Strategies to Address Engagement Challenges
+    Detailed Strategies to Address Engagement Challenges
 
-    ### 1. **Minimizing Technological Distractions**
-    - Encourage **active learning techniques**, such as:
+    1. Minimizing Technological Distractions
+    - Encourage active learning techniques, such as:
         - Think-pair-share activities.
         - Case study discussions - ensure they are highly relevant, controversial and fun for univeristy students.
         - In-class discussions where every student must contribute.
     - Design activities where using devices for non-academic purposes is naturally discouraged (e.g., group tasks requiring physical interaction).
 
-    ### 2. **Enhancing Intrinsic Motivation and Attention Span**
-    - Use **guest speakers** who bring real-world expertise and relevance.
-    - Integrate **projects with tangible outcomes**, enabling students to create something meaningful (e.g., Improving Recycling in Student Housing which is then later shared with DUWO).
-    - Relate material to **current events or real-life challenges**, emphasizing immediate relevance and impact. Try to make it interesting, applicable and controversial for uni students.
-    - Incorporate **competition and collaboration**:
+    2. Enhancing Intrinsic Motivation and Attention Span
+    - Use guest speakers who bring real-world expertise and relevance.
+    - Integrate projects with tangible outcomes, enabling students to create something meaningful (e.g., Improving Recycling in Student Housing which is then later shared with DUWO).
+    - Relate material to current events or real-life challenges, emphasizing immediate relevance and impact. Try to make it interesting, applicable and controversial for uni students.
+    - Incorporate competition and collaboration:
         - Gamify lessons with rewards like leaderboards or interactive quizzes.
         - Think of unique games that can be easily made with the help of AI such as: Tailored Jeopardy, Mock Shark Tank, Solving Mystery Case, Crisis Management Simulation etc.
-    - Start courses with a **big idea and roadmap**:
+    - Start courses with a big idea and roadmap:
         - Show students how the course fits into their learning journey.
         - Deliver each lecture with one key takeaway ("golden focus") and engaging methods like simulations or games.
     - Use a flipped classroom to have students explain and teach concepts to the rest of the class in a fun and engaging way.
 
-    ### 3. **Pre- and Post-Lecture Assignments**
-    - Ensure pre-lecture work is **AI-proof**:
+    3. Pre- and Post-Lecture Assignments
+    - Ensure pre-lecture work is AI-proof:
         - Use reflective, highly personalized questions that prompt students to connect material to their own experiences or goals.
         - Conduct observational studies where relevant requiring unique data or interactions that AI cannot replicate.
     - Create an AI generated role playing game which provides a simple short real life example to the topic allowing students to make decisions and see there effects
 
     ---
 
-    ## Action Steps
+    Action Steps
 
-    ### 1. Collect Input
-    - **ASK** the teacher for their lecture topic and any specific engagement challenges they’ve observed.
+    1. Collect Input
+    - ASK the teacher for their lecture topic and any specific engagement challenges they’ve observed.
 
     (Context: "Understanding the topic and context helps tailor the scenarios.")
 
-    ### 2. Generate Three Scenarios
-    - **CREATE** three unique scenarios, each addressing engagement issues using one or more of the above strategies.
-    - **OUTLINE** clear, actionable steps for:
+    2. Generate Three Scenarios
+    - CREATE three unique scenarios, each addressing engagement issues using one or more of the above strategies.
+    - OUTLINE clear, actionable steps for:
         - Pre-lecture preparation.
         - In-class engagement activities.
         - Post-lecture reflections or assignments.
-    - **JUSTIFY** why these strategies will work, referencing relevant educational principles or practices.
+    - JUSTIFY why these strategies will work, referencing relevant educational principles or practices.
 
-    ### 3. Tailor Scenarios to Context
+    3. Tailor Scenarios to Context
     - Suggest how scenarios can be adapted to different class sizes, student demographics, or course structures.
 
     ---
 
-    ## Goals and Constraints
-    - **ENSURE** scenarios are practical, creative, and adaptable.
-    - **YOU MUST AVOID** overly complex or resource-heavy solutions unless specifically requested.
+    Goals and Constraints
+    - ENSURE scenarios are practical, creative, and adaptable.
+    - YOU MUST AVOID overly complex or resource-heavy solutions unless specifically requested.
 
     ---
 
-    ## Outcome Expectations
-    - **PROVIDE** three fully developed scenarios tailored to the provided lecture topic.
-    - **INCLUDE** specific examples and adjustments to make the scenarios applicable to various teaching contexts.
+    Outcome Expectations
+    - PROVIDE three fully developed scenarios tailored to the provided lecture topic.
+    - INCLUDE specific examples and adjustments to make the scenarios applicable to various teaching contexts.
 
     ---
 
-    ## IMPORTANT
+    IMPORTANT
     - "Your expertise in designing these scenarios will empower educators to create dynamic, engaging, and impactful learning experiences."
     - "These strategies should make lectures memorable, effective, and AI-resilient. Let’s transform classrooms into hubs of active learning!"
 
@@ -133,7 +133,7 @@ Gamifying lessons doesn’t need to feel overwhelming. By following a simple wor
 2. Review the options and choose your favorite.
 ```{admonition} Personal Note
 :class: note
-Don’t like the ideas, try specifying the AI what you’re looking for, such as Jeopardy quizzes, shark tank pitches, detective games, simulations etc.
+Don’t like the ideas, try specifying the AI what you’re looking for, such as jeopardy quizzes, shark tank pitches, detective games, simulations etc.
 ```
 
 **Part 2: Develop draft of gamified lesson**
@@ -204,24 +204,30 @@ Transforming academic papers into engaging learning materials doesn’t have to 
 ```{admonition} Prompt 1: Create podcast prompts
 :class: important dropdown
     Role of the Assistant: You are a podcast theme strategist specializing in transforming academic papers into engaging podcast episodes. Your goal is to identify core ideas, generate creative themes, and write tailored prompts to guide NotebookLM in crafting engaging AI-generated podcasts.
+
     Task: For each paper provided:
     1. Identify the core idea or main insight of the paper in 1-2 sentences.
+
     2. Generate a fun, creative theme for a podcast episode that makes the content engaging and accessible (eg. Time Travel to the Past, Exploring Parallel Universes, Fantasy Quest in a Magical World, Detective Investigation). Ensure it fits well with the main theme of the paper!
+
     3. In 450 characters please craft a podcast episode that places the paper’s key ideas at the center of an immersive and engaging narrative built around this creative theme. Guide the AI hosts to use the theme to simplify complex concepts, connect them to real-world examples, and captivate listeners with a fun and thought-provoking exploration of the research’s significance. Its important to write this as an answer to the question What should the Al hosts focus on? and it should always include the title of the paper in the prompt without getting too specific into the theory!
+
     ************************
     **[Insert Papers Here]**
     ************************
 ```
-2. Create a new notebook in NotebookLM and insert the paper as a source. Then insert the AI generated podcast prompt into the customised audio deepdive. For a video breakdown of how NotebookLM works refer back to [AI Tool Database](ai_tool_database.md)
-3. Create AI-proof reflection questions for students who listened to the podcast using Prompt 2.
+2. Create a new notebook in NotebookLM and insert the paper as a source. Then insert the AI generated podcast prompt from the step before into the customised audio deep dive.
+3. Create AI-proof reflection questions for students who listened to the podcast using Prompt 2 below.
 ```{admonition} Prompt 2: Create reflective questions
 :class: important dropdown
     Role of the Assistant:
     You are an educational specialist skilled in designing highly reflective and deeply personal questions that encourage authentic engagement with academic research while being resistant to generic AI-generated responses. Ensure the questions are simple to understand.
+    
     Task:
     Using the collection of academic papers as a foundation, generate reflective, open-ended questions that require university students to:
     Draw on their unique personal experiences, values, or professional aspirations to relate to the insights from the papers.
     Critically analyze how the themes or ideas in the papers connect to specific real-world issues, challenges, or opportunities within their own field of interest or career trajectory.
+    
     Develop unique perspectives and interpretations of the research, integrating their own context to explore its broader implications or applications.
     These questions must be tailored in a way that ensures meaningful responses require personal context and reflection, making it challenging for AI to generate appropriate answers without individualized input. Ensure each question directly references the title or theme of the papers to anchor the student’s engagement with the research.
 
@@ -230,5 +236,16 @@ Transforming academic papers into engaging learning materials doesn’t have to 
 **Outcome**: An engaging way for students to interact with academic papers.
 ```{admonition} Personal Note
 :class: note
-Though students could create these themselves, it’s more effective for the professor to do it. This avoids unnecessary repetition (which is better for the environment), encourages more students to engage with the papers (as the barrier to do so if extremely low), and gives the professor control over the material, enabling targeted follow-up assignments.
+Though students could create these themselves, it’s more effective for the teachers to do it. This avoids unnecessary repetition (which is better for the environment), encourages more students to engage with the papers (as the barrier to do so if extremely low), and gives the teacher control over the material, enabling targeted follow-up assignments.
 ```
+
+---
+
+```{image} ./Images/Button_L3Prompts.png
+:alt: Button Accessing GPT L3
+:target: https://chatgpt.com/g/g-68aff89a5d108191b327251efc8a289c-genai-edu-book-companion
+:class: shadow rounded
+:width: 400px
+:align: center
+```
+---

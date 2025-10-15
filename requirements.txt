@@ -1,3 +1,6 @@
 jupyter-book
 matplotlib
 numpy
+sphinx-design
+sphinx-copybutton
+ghp-import
