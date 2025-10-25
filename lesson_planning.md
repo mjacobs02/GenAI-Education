@@ -1,4 +1,4 @@
-# Lesson Planning
+# Improving Lessons
 For decades, lectures have been the backbone of education. Teachers stand at the front, deliver content, and students listen passively. But this traditional approach is struggling in today's world because how students learn and engage has fundamentally changed.
 
 ## The Limits of Traditional Teaching
@@ -24,10 +24,10 @@ Although the role of a teacher will remain extremely important, AI redefines thi
 
 <br>
 
-However, this transformation relies on students actually engaging with pre-class and post-class work. Several approaches address this directly. The most straightforward is making preparation mandatory through strict pass/fail grading tied to completion of foundational work. But emerging AI technologies offer a more sophisticated solution, for example through intelligent preparation tracking systems. These platforms can monitor student engagement with pre-class materials in real-time, giving teachers a comprehensive dashboard before each lesson. The instructor immediately sees which students have prepared adequately, which concepts remain poorly understood across the class, and which topics require additional attention during the active learning session. This data-driven approach allows teachers to dynamically adjust their in-class activities. The result is a classroom where active learning actually works, since students arrive equipped with the knowledge base necessary to engage meaningfully with challenging material.
+However, this transformation relies on students actually engaging with pre-class and post-class work. Several approaches address this directly. The most straightforward is making preparation mandatory through strict pass/fail grading tied to completion of foundational work. But emerging AI technologies point toward a more sophisticated solution, such as intelligent preparation tracking systems. Such platforms could monitor student engagement with pre-class materials in real-time, giving teachers a comprehensive dashboard before each lesson. The instructor would immediately see which students have prepared, which concepts remain poorly understood across the class, and which topics require additional attention during the class time. This data-driven approach would allow teachers to dynamically adjust their in-class activities. The result would be a classroom where active learning actually works, since students arrive equipped with the knowledge base necessary to engage meaningfully with challenging material.
 
 ## How the next sections can help you make these changes
 
-The following section provides ready-to-use prompts organized into three levels. Level 1 offers simple prompts you can try immediately. Level 2 includes multi-step prompts that need more setup but create significantly more engaging lessons. Lastly, level 3 shows experimental approaches that push current the boundaries of AI in education.
+The following section provides ready-to-use prompts organized into three levels. Level 1 offers simple prompts you can try immediately. Level 2 includes multi-step prompts (which we'll call worflows) that need more setup but create significantly more engaging lessons. Lastly, level 3 shows experimental approaches that push current the boundaries of AI in education.
 
 Start with Level 1, then move to Level 2 and 3 as you get comfortable. Remember to use your AI book companion to help create extra prompts and workflows tailored for you.

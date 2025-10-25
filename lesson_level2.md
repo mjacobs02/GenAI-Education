@@ -1,8 +1,8 @@
-# Level 2: Intermediate Prompts
+# Level 2: Intermediate Workflows
 
-This section delves deeper into leveraging AI for teaching, focusing on advanced prompts that help teachers integrate thought-provoking case studies and reflections into their lessons.
+This section delves deeper into leveraging AI for teaching, focusing on multi-step prompts (worflows) that help teachers integrate thought-provoking case studies and reflections into their lessons.
 
-```{dropdown} **Video:** Walkthrough of the prompts in this section
+```{dropdown} **Video:** Walkthrough of the workflows in this section
 <div style="text-align: center;">
     <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/kOFe8Bg19Ro?start=0" 
@@ -16,10 +16,10 @@ This section delves deeper into leveraging AI for teaching, focusing on advanced
 
 ---
 
-## Prompt 1: Find Relevant Real-Life Cases
+## Workflow 1: Find Relevant Real-Life Cases
 
 - What it is:
-This prompt helps teachers find impactful, recent, and thought-provoking real-life case studies to engage students in critical discussions. These cases are tailored to align with topics relevant to TU Delft students, such as engineering, technology, policy, and management.
+This workflow helps teachers find impactful, recent, and thought-provoking real-life case studies to engage students in critical discussions. These cases are tailored to align with topics relevant to TU Delft students, such as engineering, technology, policy, and management.
 - When to use it:
 	- To provide relatable and real-world context for theoretical concepts.
 	- To spark critical thinking and debate in the classroom.
@@ -93,13 +93,13 @@ Teachers can quickly find unique and engaging case studies that resonate with st
 
 ```{admonition} Personal Note
 :class: note
-Here the cases are related to TU Delft courses however feel free to modify the prompt to be more tailored to your course.
+Here the cases are related to TU Delft courses however feel free to modify the "Find Relevant Cases Initial Prompt" to be more tailored to your course.
 ```
 ---
 
-## Prompt 2: AI Proof Through Personalised Reflection Questions
+## Workflow 2: AI Proof Through Personalised Reflection Questions
 - What it is:
-This prompt helps teachers generate reflection questions that require students to connect course topics to their personal experiences, goals, or values. These questions are designed to resist generic AI-generated answers by requiring unique and contextual insights.
+This workflow helps teachers generate reflection questions that require students to connect course topics to their personal experiences, goals, or values. These questions are designed to resist generic AI-generated answers by requiring unique and contextual insights.
 - When to use it:
 	- For assignments, essays, or discussions that encourage self-reflection.
 	- To deepen student understanding of complex topics by relating them to real life.

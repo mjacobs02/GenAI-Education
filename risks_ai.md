@@ -1,6 +1,6 @@
-# Dangers
+# Risks
 
-Generative AI has the potential to facilitate learning, but it also brings risks that can quietly weaken the very skills education is meant to develop. At their core, these risks reveal how the traditional approach to education is incompatible with generative AI. When our systems for delivering and assessing knowledge remain unchanged, AI turns into a replacement for learning instead of a tool. Some of these dangers include:
+Generative AI has the potential to facilitate learning, but it also brings risks that can quietly weaken the very skills education is meant to develop. At their core, these risks reveal how the traditional approach to education is incompatible with generative AI. When our systems for delivering and assessing knowledge remain unchanged, AI turns into a replacement for learning instead of a tool. Some of these risks include:
 
 ````{grid} 3
 :gutter: 3
@@ -18,7 +18,7 @@ AI can instantly generate polished work without the student engaging in the unde
 ```
 
 ```{grid-item-card} Engagement drop
-If content can be learned outside of the classrom with AI students can lose interest in going to class. Furthermore, they may struggle to see the importance and value of their effort if an AI tool can create the same without any problems.
+If content can be learned outside of the classroom with AI, students can lose interest in going to class. Furthermore, they may struggle to see the importance and value of their effort if an AI tool can create the same without any problems.
 ```
 
 ```{grid-item-card} Uneven playing field
@@ -30,11 +30,11 @@ AI can confidently produce content that is factually wrong, outdated, or biased 
 ```
 ````
 
-```{image} ./Images/Dangers_pathways.png
-:alt: Dangers_pathways
+```{image} ./Images/Risk_pathways.png
+:alt: Risk_pathways
 :width: 700px
 :align: center
 ```
 <br>
 
-Although these dangers look different, they share the same root problem: they thrive in an outdated learning environment designed for a pre-AI world. The good news is that the solution is within our reach. The chapters ahead outline exactly what changes are required, from rethinking lesson design to reshaping assessments.
+Although these risks look different, they share the same root problem: they thrive in an outdated learning environment designed for a pre-AI world. The good news is that the solution is within our reach. The chapters ahead outline exactly what changes are required, from rethinking lesson design to reshaping assessments.

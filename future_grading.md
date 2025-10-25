@@ -4,13 +4,13 @@
 
 AI can speed up grading, apply rubrics more consistently, and give richer feedback than most teachers can manage in one sitting. However, AI grading is still rare in classrooms. Current tools require oversight, can miss nuance, and raise privacy concerns when student work is uploaded to third-party platforms. Hence, for most teachers, using AI to grade everything would still be more work than benefit.
 
-In the future, schools could run secure local AI systems to grade work without sending data outside the institution. AI could handle the first pass: applying detailed rubrics, checking requirements, and producing draft feedback. Teachers would then validate and adjust, focusing attention where human judgment matters most.
+In the future, universities or academic institutions could run secure local AI systems to grade work without sending data outside the institution. AI could handle the first pass: applying detailed rubrics, checking requirements, and producing draft feedback. Teachers would then validate and adjust, focusing attention where human judgment matters most.
 
 At the same time, in the future assignments will shift toward process-focused assessment. Therefore with personal AI assistants constant grading becomes less important. Instead, AI can track student progress and provide ongoing feedback ensuring every students has personalised attention until the content is mastered. Hence these AI assistants can provide personal help while the teachers can focus on the meaningful human connections, experiences and big picture learning. 
 
-## How can you already begin using AI to help you today
+## How can you already begin using AI for grading today
 
-The following show varying different degrees as to how teachers can already begin using AI today to help with grading.
+The following show varying degrees as to how teachers can already begin using AI today to help with grading.
 
 - **A. Grammar, clarity and plagiarism checks** – Let AI flag errors so teacher time is spent on higher-level thinking and content quality.
 - **B. Rubric-based feedback drafting** – Give your own scores or notes, and have AI turn them into full, clear feedback paragraphs for students.

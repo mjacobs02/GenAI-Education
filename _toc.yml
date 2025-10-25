@@ -11,18 +11,20 @@ parts:
             title: "The Books AI Companion"
           - file: using_genai
             title: "How to Use GenAI"
-          - file: dangers_ai
-            title: "Dangers"
+          - file: risks_ai
+            title: "Risks"
 
   - caption: "Transforming Teaching"
     chapters:
+      - file: learning_objectives
+        title: "Changing Learning Objectives"
       - file: lesson_planning
-        title: "Lesson Planning"
+        title: "Improving Lessons"
         sections:
           - file: lesson_level1
             title: "Level 1: Beginner Prompts"
           - file: lesson_level2
-            title: "Level 2: Intermediate Prompts"
+            title: "Level 2: Intermediate Workflows"
           - file: lesson_level3
             title: "Level 3: Advanced Workflows"
       - file: ai_proofing_assignments

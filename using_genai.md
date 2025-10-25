@@ -90,6 +90,6 @@ Using AI without a clear prompt is like asking a builder to “just make a house
 </details>
 <br>
 
-Remember, this is just one way to structure prompts, the most important principle is simply providing enough detail and context for the AI to understand exactly what you need. Remember that the custom AI assistant can help you create prompts and workflows tailored to your specific use cases aswell.
+Remember, this is just one way to structure prompts, the most important principle is simply providing enough detail and context for the AI to understand exactly what you need. Remember that the custom AI assistant can help you create prompts and workflows tailored to your specific use cases as well.
 ```
 ````

@@ -2,7 +2,7 @@
 
 AI can take on simulated real-world roles and provide feedback at defined points in a group project. By incorporating AI iteratively, fairness and effectiveness can better be ensured. Over time, the AI’s structured prompts and questions help groups stay organized, think critically, and respond to challenges as they arise. Furthermore, because AI can track both group output and individual contributions, it supports fairer evaluation and reduces the risk of some members doing less work. This support frees the teacher to focus on the parts of collaboration that AI cannot replace such as guiding interpersonal skills, supporting conflict resolution, and fostering critical thinking.
 
-## How can you already begin using AI to help you today
+## How can you already begin using AI for group projects today
 
 The following are a few ideas show how AI can fit into group projects. Add them gradually, get input from students, and adjust the approach as you go.
 
