@@ -1,18 +1,6 @@
-/* Remove borders/outlines from the entire tab container */
-.sd-tab-set,
-.sd-tab-set.docutils,
-.tabbed-set {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
+/* Wrap long lines in code/literal blocks (no horizontal scroll) */
+div.highlight pre, pre.literal-block, .literal-block {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 
-/* Also remove top/bottom outlines (some themes add separators) */
-.sd-tab-set::before,
-.sd-tab-set::after,
-.tabbed-set::before,
-.tabbed-set::after {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}

@@ -62,7 +62,7 @@ html:
   use_issues_button: false
   use_repository_button: false
   sanitize_html: false
-  css_files:
+  extra_css:
     - _static/wrap.css
 
 copyright: 2025
