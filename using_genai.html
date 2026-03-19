@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>How to Use GenAI &#8212; GenAI in Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'using_genai';</script>
+    <script src="_static/newtab-chatgpt.js?v=12e373b7"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Risks" href="risks_ai.html" />
+    <link rel="prev" title="The Books Al Companion" href="custom_gpt.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="GenAI in Education - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="GenAI in Education - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="module1_intro.html">Introduction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="custom_gpt.html">The Books AI Companion</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">How to Use GenAI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="risks_ai.html">Risks</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Transforming Teaching</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="learning_objectives.html">Changing Learning Objectives</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="lesson_planning.html">Improving Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner Prompts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Advanced Workflows</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Future</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="future_edu_main.html">The Future in Education</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="future_group_projects.html">Using AI in Group Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_grading.html">Using AI to Grade Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_academic_research.html">Using AI in Academic Research</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Outro.html">Thank You</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>How to Use GenAI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-your-use">Finding Your Use</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-tools">Navigating the Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staying-up-to-date">Staying Up to Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#my-biggest-ai-tips">My Biggest AI Tips</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="how-to-use-genai">
+<h1>How to Use GenAI<a class="headerlink" href="#how-to-use-genai" title="Link to this heading">#</a></h1>
+<p>Generative AI offers countless possibilities, but the sheer number of use cases can overwhelm even the most experienced educator. It’s easy to fall into the trap of thinking you should be using AI for everything simply because others are. Instead, the most effective approach is to focus on your immediate needs and build from there. One well-chosen use case, implemented thoughtfully, is far more valuable than a dozen half-used ones.</p>
+<p>Furthermore, just as you expect students to use AI as a tool rather than a substitute for their own work, the same standard applies to teachers. AI can give you a first draft, suggest changes, or offer new perspectives, but it’s your responsibility to fact-check, verify, and refine before you share or implement anything.</p>
+<section id="finding-your-use">
+<h2>Finding Your Use<a class="headerlink" href="#finding-your-use" title="Link to this heading">#</a></h2>
+<p>The first step is identifying where AI can make a meaningful difference for you right now. You can do this in multiple ways:</p>
+<ol class="arabic simple">
+<li><p>Exchange prompts, workflows, and discoveries with colleagues. Seeing how others approach similar challenges often sparks ideas you wouldn’t think of alone.</p></li>
+<li><p>Use this book and the internet to find unique uses. For example, the <a class="reference internal" href="lesson_level3.html"><span class="std std-doc">advanced lesson planning workflows</span></a> can show you what’s possible. You can even follow-up by having a conversation with the custom AI companion from this book. Be specific and it can suggest custom prompts or workflows tailored to you.</p></li>
+</ol>
+</section>
+<section id="navigating-the-tools">
+<h2>Navigating the Tools<a class="headerlink" href="#navigating-the-tools" title="Link to this heading">#</a></h2>
+<p>For simplicity, you can think of AI tools in education as falling into three broad categories, each with distinct strengths and ideal use cases:</p>
+<a class="reference internal image-reference" href="_images/Navigating_Tools.png"><img alt="Navigating_Tools" class="align-center" src="_images/Navigating_Tools.png" style="width: 700px;" /></a>
+<br>
+<p><strong>1A. General models</strong> (eg. CoPilot, ChatGPT, Claude, Gemini, Mistral, DeepSeek etc.) are the standard large language models most people start with. They excel at a wide range of everyday tasks: drafting emails, explaining concepts, summarizing articles, and brainstorming ideas. Think of them like versatile line cooks who can handle most dishes and work across different cuisines with solid all-around skills.</p>
+<p><strong>1B. Reasoning models</strong> often come from the same providers but are specifically designed for complex thinking tasks. These models hold context longer, make connections across multiple pieces of information, and tackle intricate problem-solving that requires extended thought. They’re like executive chefs planning elaborate tasting menus, thinking through how flavors build across courses, solving timing challenges, and dealing with multi-step preparations.</p>
+<p>The choice between general and reasoning models depends entirely on your task’s complexity. Use reasoning models when your query requires deep analysis or multi-step thinking. Some platforms now even auto-select the best model for you based on your prompt’s complexity. Since both types often come from the same provider, both of the models share access to available tools like internet browsing, voice assistants, and image creation.</p>
+<p><strong>2. Specialized tools</strong> (eg. NotebookLM, Consensus, DeepL etc.) focus on specific purposes like academic research or data privacy. NotebookLM, for example, doesn’t store chats in the memory and works only with sources you provide, unlike general models that draw from their entire training dataset. While this makes specialized tools more factual and reliable, they’re often less creative and worse at general writing. They’re like pastry chefs who’ve mastered their domain with precise techniques and reliable results, but ask them to grill a steak and they’re out of their element.</p>
+<p>This trade-off perfectly illustrates why matching tools to tasks matters. For example, in a literature analysis I’d choose NotebookLM because it won’t fabricate claims and instead directly states when information isn’t available. However, for creative writing or brainstorming, I’d prefer a general model’s flexibility and imagination.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Optional: Using local models</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Some educators also explore local models, which directly run on a computer instead of a server, for maximum privacy or control. These work similarly to cloud-based LLMs but require technical setup and significant computing power. If you’re curious about the potential of open-source options without the technical complexity, platforms like <a href="https://api.together.xyz/signin?redirectUrl=%2Fplayground" target="_blank" rel="noopener noreferrer">Together AI Playground</a> offer access to various models through a single interface.</p>
+<p class="sd-card-text">Furthermore, if you want to dig deeper into model performance, the <a href="https://huggingface.co/spaces/AIEnergyScore/Leaderboard" target="_blank" rel="noopener noreferrer"> Hugging Face AI Energy Score Leaderboard </a> is a useful resource. It compares open models on energy efficiency giving you more insight about which tools align with your teaching and priorities.</p>
+</div>
+</details><p>The key insight is that there’s no single “best” type of model. The choice depends entirely on how you use it. For TU Delft, Copilot is the preferred tool due to institutional support and data privacy compliance. You can always reference the <a href="https://softwarefinder.tudelft.nl/" target="_blank" rel="noopener noreferrer">TU Delft software finder</a> to see what is and isn’t permitted to use. You can also visit the <a href="https://intranet.tudelft.nl/en/group/guest/ai" target="_blank" rel="noopener noreferrer">TU Delft intranet AI guidelines</a> for the university’s AI policies.</p>
+</section>
+<section id="staying-up-to-date">
+<h2>Staying Up to Date<a class="headerlink" href="#staying-up-to-date" title="Link to this heading">#</a></h2>
+<p>The constant rollout of new features and updates can feel overwhelming, making you feel perpetually behind. Don’t let this worry you. Focus instead on the fundamental principles and practices discussed throughout this book as these will serve you well regardless of which specific tools you choose. Furthermore, instead of chasing every new tool, focus on mastering the fundamental use cases that are most valuable to you. However, if you still want to stay current, the <a href="https://community.myaiadvantage.com/c/ai-app-ranking/" target="_blank" rel="noopener noreferrer">AI Advantage Resource Database</a> offers a great ranking of the best tools, and the <a href="https://www.therundown.ai/subscribe?ref=Bespx8xsHp" target="_blank" rel="noopener noreferrer">Rundown Email Newsletter</a> offers daily updates on the latest in AI.</p>
+</section>
+<section id="my-biggest-ai-tips">
+<h2>My Biggest AI Tips<a class="headerlink" href="#my-biggest-ai-tips" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+The 5-Question Prompt</label><div class="sd-tab-content docutils">
+<p>If you’re not getting the output you want, it’s likely because your prompt has been misinterpreted. The easiest way to fix this is to have the AI ask for clarification by adding the following at the end of your prompt:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>First, ask me 5 questions that will improve the response you will be giving me. Wait for my response before continuing.
+</pre></div>
+</div>
+<p>This forces the model to analyze your request and identify the specific details it still needs, ensuring the final output is far more accurate and tailored to what you’re actually looking for. This method is by far one of the most helpful strategies for getting the output you want, and it’s a simple change you can apply anytime.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Use NotebookLM</label><div class="sd-tab-content docutils">
+<p>When working with specific sources (such as data, academic papers, articles, etc.) it’s best to use tools designed for that purpose. I recommend using NotebookLM, as it bases its answers only on the information you’ve provided. This design choice dramatically reduces the risk of hallucinations, where AI makes up information or produces incorrect numbers.</p>
+<p>Beyond this, NotebookLM offers several other beneficial features for understanding complex sources. For example, it can create audio overviews and video lectures tailored to your documents. In the <a class="reference internal" href="lesson_level3.html#workflow-2-turning-academic-papers-into-engaging-ai-generated-podcasts"><span class="std std-ref">second level 3 workflow</span></a> you can see how NotebookLM can be used to generate audio overviews of papers which you can be used in lectures.</p>
+<p>However, the power of these tools is only as good as the sources you provide. The biggest challenge here is selecting the right, high-quality information to begin with.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Prompting</label><div class="sd-tab-content docutils">
+<p>Using AI without a clear prompt is like asking a builder to “just make a house.” You’ll get something, but it might not be what you wanted. Hence, I like to incorporate the following which I find particularly effective:</p>
+<ol class="arabic simple">
+<li><p><strong>Define the Task Clearly</strong>: State what you want the AI to do. Examples: “Generate potential research questions related to…”, “Summarize key findings from these research papers…”, “Create a syllabus outline for a course on…”.</p></li>
+<li><p><strong>Provide Context</strong>: Provide background information. Who is the target audience (students, fellow researchers)? What are the learning objectives? Example: “Create a syllabus outline for a first-year bachelor course on sustainable engineering, focusing on circular economy principles.”</p></li>
+<li><p><strong>Supply exemplars</strong>: Give examples of the desired output. This drastically improves quality. Example: If asking for research questions, provide examples of well-formulated research questions in the relevant field. If asking for a syllabus, provide an example syllabus or a link to one.</p></li>
+<li><p><strong>Assign a Persona</strong>: Tell the LLM who it should be “acting” as. Example: “Act as a leading expert in blockchain…” or “Act as an experienced TU Delft professor designing a new course…”. This adds context implicitly. Instead of explicitly stating “professors value conciseness, passion for the subject, and use simple language,” you simply say “act as a university professor,” and the LLM draws on its training data to infer these characteristics.</p></li>
+<li><p><strong>Specify the Format</strong>: Tell the LLM how you want the output formatted. Examples: “Use bullet points,” “Create a table,” “Write a concise abstract,” “Format as a LaTeX document.”</p></li>
+<li><p><strong>Set the Tone</strong>: Define the desired tone of voice. Examples: “Use a formal, academic tone,” “Use an engaging and accessible tone for undergraduate students,” “Use a concise and technical tone suitable for a scientific publication.”</p></li>
+</ol>
+<details>
+<summary><strong>Optional Video: Click here for a walkthrough of this prompting approach explained by Jeff Su</strong></summary>
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/jC4v5AS4RIM" 
+            title="Welcome to Jupyter Book" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+</div>
+</details>
+<br>
+<p>Remember, this is just one way to structure prompts, the most important principle is simply providing enough detail and context for the AI to understand exactly what you need. Remember that the custom AI assistant can help you create prompts and workflows tailored to your specific use cases as well.</p>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="custom_gpt.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">The Books Al Companion</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="risks_ai.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Risks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-your-use">Finding Your Use</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-tools">Navigating the Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staying-up-to-date">Staying Up to Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#my-biggest-ai-tips">My Biggest AI Tips</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

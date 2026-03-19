@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Changing Learning Objectives &#8212; GenAI in Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'learning_objectives';</script>
+    <script src="_static/newtab-chatgpt.js?v=12e373b7"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Improving Lessons" href="lesson_planning.html" />
+    <link rel="prev" title="Risks" href="risks_ai.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="GenAI in Education - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="GenAI in Education - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="module1_intro.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="custom_gpt.html">The Books AI Companion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_genai.html">How to Use GenAI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="risks_ai.html">Risks</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Transforming Teaching</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Changing Learning Objectives</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="lesson_planning.html">Improving Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner Prompts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Advanced Workflows</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Future</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="future_edu_main.html">The Future in Education</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="future_group_projects.html">Using AI in Group Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_grading.html">Using AI to Grade Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_academic_research.html">Using AI in Academic Research</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Outro.html">Thank You</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Changing Learning Objectives</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-updated-blooms-taxonomy">AI-Updated Blooms Taxonomy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-learning-objectives">Updating Learning Objectives</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="changing-learning-objectives">
+<h1>Changing Learning Objectives<a class="headerlink" href="#changing-learning-objectives" title="Link to this heading">#</a></h1>
+<p>Constructive alignment (the principle that learning objectives, activities, and assessments, should work together) has long been central to effective course design. When properly aligned, students understand what they need to learn, engage in activities that build those skills, and demonstrate their understanding through meaningful assessment.</p>
+<p>However, with the introduction of AI, tasks that once required students to think critically can now be completed in seconds. Thus, turning assignments into ways of evaluating prompting skills rather than learning. Hence, the challenge becomes redesigning aspects of constructive alignment to ensure that AI enhances student thinking, rather than replacing it.</p>
+<a class="reference internal image-reference" href="_images/Constructive_alignment.png"><img alt="Constructive Alignment" class="align-center" src="_images/Constructive_alignment.png" style="width: 700px;" /></a>
+<br>
+<p>To address this challenge, this section examines how AI reshapes learning at each stage of Bloom’s taxonomy. You don’t need to use Bloom’s taxonomy in your teaching, but for the sake of understanding, we use this framework as a way to compartmentalize the different ways students can learn while using AI. In practice, these cognitive levels are far less structured and hierarchical than the Bloom’s taxonomy model suggests.</p>
+<section id="ai-updated-blooms-taxonomy">
+<h2>AI-Updated Blooms Taxonomy<a class="headerlink" href="#ai-updated-blooms-taxonomy" title="Link to this heading">#</a></h2>
+<p>This section examines each stage of Bloom’s taxonomy reinterpreted for an AI-rich world. For every level, beginning with the new foundational skill of Discover, we explore how AI can act as a powerful partner, what tasks it can perform effectively, and where meaningful human thinking remains essential.</p>
+<a class="reference internal image-reference" href="_images/Bloom.png"><img alt="Bloom" class="align-center" src="_images/Bloom.png" style="width: 700px;" /></a>
+<br>
+<p>Discover sits at the foundation because finding and evaluating information through AI has become as fundamental as memorization once was. While Discover involves sophisticated skills like evaluating credibility and strategic searching, it sits at the base of the pyramid because without quality information, students cannot meaningfully remember, understand, or create anything with AI.</p>
+<p>By understanding the updated Bloom’s taxonomy, educators and students can better see how AI reshapes the balance of cognitive effort and why human judgment, creativity, and reflection remain at the core of genuine learning.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+1. Discover</label><div class="sd-tab-content docutils">
+<p>Discovery goes far beyond basic internet searching. It requires formulating specific queries, understanding AI capabilities and limitations, evaluating source credibility, and curating information systematically.</p>
+<p>For example, an engineering student designing a renewable energy project for a rural community must decide which information to gather first. This could include technical specifications, case studies of similar projects, local environmental constraints, and cost-benefit analyses. AI can act as a valuable research partner by providing relevant papers and technical data, but the student must confirm that the sources are accurate, region-specific, and applicable to the project’s goals. By filtering and sequencing the information, the student ensures that the discovery phase produces high-quality inputs for subsequent design and evaluation.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+2. Remember</label><div class="sd-tab-content docutils">
+<p>The rise of AI tools requires a fundamental shift in how educators approach memorization. Instead of abandoning factual recall, institutions must become more selective about what students commit to memory.</p>
+<p>Calculators can perform all arithmetic operations, yet mathematics education still emphasizes basic mental math. This approach works because foundational knowledge enables higher-order thinking and independent problem-solving when tools are unavailable. The same logic applies across all disciplines in an AI-integrated classroom.</p>
+<p>Medical students demonstrate this principle clearly. While AI can calculate drug dosages, students must still memorize standard safe dosages for common medications. During emergencies or when technology fails, this foundational knowledge prevents serious harm.</p>
+<p>At the same time, many details no longer need to be memorized. A history student can now ask an AI, “What was the war called where Napoleon attacked most of Europe?” and receive detailed information about the Napoleonic Wars (1803–1815). Hence, educators should focus on memorising only the true fundamentals. For non-essential details that AI can easily retrieve, teaching should instead emphasize higher order thinking (eg. using content to identify patterns and assess significance).</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+3. Understand</label><div class="sd-tab-content docutils">
+<p>AI tools excel at providing clear explanations, analogies, and multiple perspectives on complex concepts, but students must move beyond passive consumption to active interpretation.</p>
+<p>Here, AI serves as the patient tutor, providing explanations and answering follow-up questions. Students serve as active interpreters, taking those explanations and embedding them within broader frameworks of meaning. For instance, after AI explains Newton’s second law, students must articulate why this principle matters in real-world contexts or consider its ethical implications in engineering decisions.</p>
+<p>Here the most effective approach treats AI as a collaborative learning partner rather than a replacement for thinking. Students can explain concepts in their own words, then ask AI to evaluate their understanding or suggest improvements.</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+4. Apply</label><div class="sd-tab-content docutils">
+<p>Generative AI tools and agents are becoming increasingly capable of solving problems and adapting to new situations. Yet, physical constraints and human dynamics create application challenges that remain uniquely human.</p>
+<p>For example, AI can simulate a titration experiment and even suggest adjustments, but students in a chemistry lab must physically conduct the experiment, take precise measurements, and handle unexpected outcomes. Similarly, in a policy course, AI can draft interview questions, but students must conduct real interviews with experts. Here, the AI provides procedural knowledge and the student applies it within the messy complexity of human interaction.</p>
+<p>Real-world application demands that students build meaningfully on the Remember and Understand levels. For example, the chemistry student conducting an experiment must recall safety protocols instantly when unexpected reactions occur, understand underlying principles to troubleshoot problems, and then apply this integrated knowledge in real-time decision-making.</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+5. Analyze</label><div class="sd-tab-content docutils">
+<p>AI excels at processing vast amounts of data and identifying patterns that would take humans weeks to discover. However, students must develop the critical thinking skills to determine why those patterns matter, whether the analysis is valid, and how insights connect to real-world implications.</p>
+<p>For example, AI might analyze political speeches and identify increasingly nationalistic language patterns, even offering justifications. However, students must validate whether this AI analysis holds up against other historical evidence, determine whether this pattern was actually significant compared to other factors, and judge how this finding should influence current policy decisions. Thus, AI can generate the interpretation, but students must evaluate its accuracy and decide its real-world importance.</p>
+<p>This creates an essential new skill: analyzing AI analysis itself. Students must learn to critique AI-generated analysis, cross-check conclusions against other evidence, and identify when AI pattern-detection misses crucial context.</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+6. Evaluate</label><div class="sd-tab-content docutils">
+<p>AI excels at mechanical evaluation tasks. It can apply grading rubrics consistently, generate comprehensive pros and cons lists, and check arguments against established criteria. Hence, a student evaluating policy options might use AI to receive a more comprehensive evaluation than any single human expert could provide, complete with precedents, stakeholder impacts, and potential consequences.</p>
+<p>However, students must learn to use this comprehensive AI analysis as sophisticated input rather than final judgment. When AI evaluates competing historical interpretations and suggests one is “more convincing based on available evidence,” students must examine that reasoning, consider whether they agree with the AI’s weighting of different factors, and develop their own defensible position. The goal is not to compete with AI’s comprehensive analysis, but to engage with it critically and develop independent evaluative skills.</p>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+7. Create</label><div class="sd-tab-content docutils">
+<p>Creating new work with AI represents the highest level of cognitive effort because it integrates every preceding skill. Although, AI can generate ideas, drafts and designs, it cannot create with genuine experience. For this reason, meaningful creation happens when students iteratively build on AI-generated ideas and transform them into original work that reflects their own thinking and values.</p>
+<p>The students role is to curate, refine, and add personal meaning. For example, if AI suggests several research directions, students must decide which aligns best with their interests and goals. Making these decisions requires reflection and draws on every preceding skill in Bloom’s taxonomy. Through constant iteration they produce something that is authentically theirs.</p>
+<p>Documenting the creative process is essential for both learning and academic integrity. Students should show the drafts they considered, the decisions they made, and how their ideas evolved. This transparency reinforces that creativity is more than producing a polished final product. Instead, it is the deliberate act of making choices, integrating insights, and demonstrating originality and growth.</p>
+</div>
+</div>
+</section>
+<section id="updating-learning-objectives">
+<h2>Updating Learning Objectives<a class="headerlink" href="#updating-learning-objectives" title="Link to this heading">#</a></h2>
+<p>Understanding how AI reshapes Bloom’s taxonomy is the first step to updating learning objectives. The problem is that many well-intentioned learning objectives (eg. involving verbs like “identify,” “understand,” and “analyse”) become nearly impossible to assess in the AI age. How do you know if a student truly understands the interactions between disciplines, or if they’ve just asked AI to explain it?</p>
+<p>Thus, updating learning objectives requires working backward from what you actually want students to be able to do, not just know. This means asking two critical questions:</p>
+<ol class="arabic simple">
+<li><p>What cognitive work is essential for students to do themselves? Ask yourself what genuinely builds the competencies they need.</p></li>
+<li><p>What can AI legitimately help with? If AI can retrieve information or generate initial analysis, that’s not necessarily bad. However, the learning outcome must require students to do something with that AI-generated content.</p></li>
+</ol>
+<p>Ultimately, redesigning learning objectives requires innovating within all aspects of constructive alignment. Firstly, you identify what students must genuinely learn (versus what AI can support). Next, you need to deliver that content in engaging ways that make students want to do the cognitive work themselves. Lastly, you need to design assessments that make it impossible for AI to bypass the intended learning objetives. The following sections focus how to adapt the final two pillars of constructive alignment.</p>
+<a class="reference external image-reference" href="https://chatgpt.com/g/g-68aff89a5d108191b327251efc8a289c-genai-edu-book-companion"><img alt="Button Accessing GPT Learning Objectives" class="shadow rounded align-center" src="_images/Button_learning_objectives.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="risks_ai.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Risks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="lesson_planning.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Improving Lessons</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-updated-blooms-taxonomy">AI-Updated Blooms Taxonomy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-learning-objectives">Updating Learning Objectives</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

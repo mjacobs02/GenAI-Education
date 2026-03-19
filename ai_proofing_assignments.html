@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AI-Proofing Assignments &#8212; GenAI in Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/wrap.css?v=66de6244" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ai_proofing_assignments';</script>
+    <script src="_static/newtab-chatgpt.js?v=12e373b7"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The Future" href="future_edu_main.html" />
+    <link rel="prev" title="Level 3: Advanced Workflows" href="lesson_level3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="GenAI in Education - Home"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="GenAI in Education - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="module1_intro.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="custom_gpt.html">The Books AI Companion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_genai.html">How to Use GenAI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="risks_ai.html">Risks</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Transforming Teaching</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="learning_objectives.html">Changing Learning Objectives</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="lesson_planning.html">Improving Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level1.html">Level 1: Beginner Prompts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level2.html">Level 2: Intermediate Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_level3.html">Level 3: Advanced Workflows</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">AI–Proofing Assignments</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Future</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="future_edu_main.html">The Future in Education</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="future_group_projects.html">Using AI in Group Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_grading.html">Using AI to Grade Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="future_academic_research.html">Using AI in Academic Research</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Outro.html">Thank You</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>AI-Proofing Assignments</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#at-which-point-does-ai-use-become-misconduct">At which point does AI use become misconduct</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-should-grading-and-assignments-adapt">How should grading and assignments adapt</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-assignments-to-be-more-ai-resilient">Changing assignments to be more AI resilient</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#increasing-transparency-and-documentation-in-assignments">Increasing transparency and documentation in assignments</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="ai-proofing-assignments">
+<h1>AI-Proofing Assignments<a class="headerlink" href="#ai-proofing-assignments" title="Link to this heading">#</a></h1>
+<p>This section takes a practical approach to assessment design in the AI age. First, we explore where the boundary lies between productive AI use and academic misconduct. By clearly defining this line, educators can proactively design “AI-resilient” assignmts that are both difficult for AI to complete independently and genuinely engaging for students to do.</p>
+<section id="at-which-point-does-ai-use-become-misconduct">
+<h2>At which point does AI use become misconduct<a class="headerlink" href="#at-which-point-does-ai-use-become-misconduct" title="Link to this heading">#</a></h2>
+<p>Determining when AI use crosses into academic misconduct is complex, and the exact line will always depend on the teacher, the learning objectives, and the expectations set for a given task. However, a clear principle can guide this decision:</p>
+<p><em>AI becomes misconduct when students use its outputs uncritically, thus incorporating text, ideas, or solutions without engaging in the intellectual steps that the assignment is designed to develop</em>.</p>
+<p>For example, if a student simply pastes an AI-generated answer into an assignment without questioning its accuracy, reflecting on its reasoning, or adapting it to their own understanding, they are no longer learning.</p>
+<a class="reference internal image-reference" href="_images/misconduct.png"><img alt="misconduct" class="align-center" src="_images/misconduct.png" style="width: 700px;" /></a>
+<br>
+Because AI is evolving rapidly, the definition of fair use and misconduct will need ongoing refinement. Regularly gathering feedback from both students and educators can help ensure interactive updates to assignment design, expectations, and documentation practices, ensuring AI continues to be embraced as a tool and not replacement to learning.
+</section>
+<section id="how-should-grading-and-assignments-adapt">
+<h2>How should grading and assignments adapt<a class="headerlink" href="#how-should-grading-and-assignments-adapt" title="Link to this heading">#</a></h2>
+<p>Preventing AI from replacing learning requires designing assignments and systems that emphasize critical thinking, personal input, and process over polished final outputs. Trying to react after problems appear, such as by using AI detectors, is not a reliable option. These tools can flag genuine work as AI-generated, miss AI-written text that’s been lightly edited, and can show bias against certain student groups.</p>
+<p>Instead, the focus should be on building assignments from the ground up that are both difficult for AI to recreate and genuinely engaging for students to complete. By making the assignment focused on involving authentic effort, the barrier to misusing AI becomes much higher, and it becomes less tempting to rely on AI for shortcuts.</p>
+<section id="changing-assignments-to-be-more-ai-resilient">
+<h3>Changing assignments to be more AI resilient<a class="headerlink" href="#changing-assignments-to-be-more-ai-resilient" title="Link to this heading">#</a></h3>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Personalised and localised assignments</label><div class="sd-tab-content docutils">
+<p>Assignments that draw on local contexts, personal experiences, or course-specific discussions are harder to outsource to AI. For example, asking students to analyze a company in their own region or to reflect on insights from an in-class debate requires unique input that AI cannot easily generate. These tasks ensure that students apply concepts in ways that are personally meaningful and contextually grounded.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Breaking down assignments</label><div class="sd-tab-content docutils">
+<p>Breaking tasks into stages (brainstorming, drafts, peer feedback, etc.) ensures students engage with the material over time rather than producing a final product all at once. Scaffolding with in-person checkpoints or discussions makes it clear whether students are developing their own thinking or relying entirely on AI.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Varying assignments</label><div class="sd-tab-content docutils">
+<p>Assignments that use varied formats reduce the likelihood of over-reliance on AI generation. Unique formats tend to require more creativity, synthesis, and personal interpretation. Examples of varying formats include:</p>
+<ul class="simple">
+<li><p>Creative Multimedia Projects</p></li>
+<li><p>Oral Exams and Presentations</p></li>
+<li><p>Real-Time Proctored Exams</p></li>
+<li><p>Group Projects</p></li>
+<li><p>Reflective Assessments and Portfolios</p></li>
+<li><p>Essays and Written Assignments</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Incorporating in-class components</label><div class="sd-tab-content docutils">
+<p>Short in-class assessments, group discussions, and oral presentations help instructors gauge students’ understanding in real time. These components can reveal red flags when students seem unable to explain or expand on work they have submitted.</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Grading more on process than final output</label><div class="sd-tab-content docutils">
+<p>Placing greater weight on evidence of progress, drafts, and reflection discourages students from submitting polished AI-generated work. By rewarding the development of ideas over time, instructors shift the incentive away from shortcutting the process.</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Make assignments engaging</label><div class="sd-tab-content docutils">
+<p>Lastly, while academic work will always require rigor, assignments that feel genuinely engaging and purposeful can intrinsically motivate students to invest their own effort. This, in turn, makes using AI to bypass the learning process less appealing. To address this, assignments can incorporate a few straightforward strategies:</p>
+<ul class="simple">
+<li><p>Provide relevant real-world cases and challenges</p></li>
+<li><p>Allow for student choice</p></li>
+<li><p>Incorporate collaborative and interactive elements</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="increasing-transparency-and-documentation-in-assignments">
+<h3>Increasing transparency and documentation in assignments<a class="headerlink" href="#increasing-transparency-and-documentation-in-assignments" title="Link to this heading">#</a></h3>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Better reflection</label><div class="sd-tab-content docutils">
+<p>Improving reflection increases transparency and encourages metacognition whereby students think explicitly about their learning process and AI’s role in it. By regularly examining how and why they use AI, students develop critical evaluation skills and learn to identify AI’s strengths and weaknesses. This reflection can be done in many ways such as:</p>
+<p><strong>1. Reflection questions at the end of assignments</strong></p>
+<p>Teachers can ask students reflection questions such as: What was the most helpful AI suggestion and why? Did you notice any bias or errors from the AI? How did you spot these, and what did you do about them? Next time you use AI in an assignment, what will you do differently and why?</p>
+<p>One problem is that students currently tend to answer these questions quite superficially. This is partially because students forget all the ways they used AI throughout the assignment. One way to address this is to have students create micro-reflections throughout the assignment. This allows them to keep a record of all the ways they used AI. For example the statement can be added each time the student uses AI:</p>
+<p><em>[AI Tool] was used to [goal]. It suggested [output]. These suggestions were [kept/changed] because [reason].</em></p>
+<p>Then at the end of the assignment students can review these micro-reflections and think more critically about their AI use. Furthermore, teachers can analyse all the micro-reflections of their students and gain insights about how students are using AI, allowing them to iterate and improve the assignments.</p>
+<p><strong>2. Chatbot-guided reflection</strong></p>
+<p>Students can reflect by talking with a chatbot that asks questions, follows up on their answers, and pushes them to think deeper. Following this, a conversation summary or full transcript can be shared with teachers.</p>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+Better documentation</label><div class="sd-tab-content docutils">
+<p>Tools like <a href="https://www.grammarly.com/authorship" target="_blank" rel="noopener noreferrer">Grammarly Authorship</a> automatically track and label text as human-written, AI-generated, or AI-edited, providing students with a transparent record of their writing activity. By asking students to submit authorship reports alongside their work, teachers can see the origin of text and verify that students were actively engaged in writing rather than simply submitting AI output. However, its important to note that tracking tools (like Grammarly Authorship) are not without flaws. For example, students could generate AI content elsewhere and rewrite it in their own words inside the monitored workspace, bypassing critical engagement.</p>
+<p>Therefore, better documentation and monitoring shouldn’t become the sole strategy for responding to GenAI. Instead teachers should embrace the opportunity towards changing assessments to better develop student skills actually needed in this new AI age.</p>
+</div>
+</div>
+<a class="reference external image-reference" href="https://chatgpt.com/g/g-68aff89a5d108191b327251efc8a289c-genai-edu-book-companion"><img alt="Button Accessing GPT AI Proofing Assignments" class="shadow rounded align-center" src="_images/Button_AIProofAssignments.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lesson_level3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Level 3: Advanced Workflows</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="future_edu_main.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Future</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#at-which-point-does-ai-use-become-misconduct">At which point does AI use become misconduct</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-should-grading-and-assignments-adapt">How should grading and assignments adapt</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-assignments-to-be-more-ai-resilient">Changing assignments to be more AI resilient</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#increasing-transparency-and-documentation-in-assignments">Increasing transparency and documentation in assignments</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Marnix Jacobs
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

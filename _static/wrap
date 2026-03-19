@@ -1,0 +1,6 @@
+/* Wrap long lines in code/literal blocks (no horizontal scroll) */
+div.highlight pre, pre.literal-block, .literal-block {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
